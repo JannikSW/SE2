@@ -1,0 +1,73 @@
+\documentclass[ngerman,a4paper,11pt,pdftex]{report}
+\usepackage{000_Praxisbericht}
+
+\includeonly{
+    001_Praxisprojekt,
+    002_CleanArchitecture,
+    003_ProgrammingPrinciples,
+    004_Entwurfsmuster,
+    005_UnitTest,
+    006_Refactoring
+}
+
+\makeglossaries
+
+\begin{document}
+
+% project details
+\projecttitle{Advanced Software Engineering}
+
+\projectauthor{Jannik Scheller}
+\projecttype{Programmentwurf}
+\studentid{6077233}
+
+% timeline
+\deadline{07.10.2022}
+\duration{05.09.2022 - 07.10.2022}
+
+% school information
+\schoolname{DHBW Karlsruhe}
+\schoollogo{Abbildungen/Ausgabe/Deckblatt_DHBWLogo}
+\schooladvisor{Daniel Lindner}
+
+% degree information
+\degreetype{Bachelor of Science}
+\subject{Informatik / Informationstechnik}
+\courseid{TINF19B3}
+
+\maketitle
+
+\begin{onehalfspace}
+
+    \pagenumbering{gobble}
+    \tableofcontents
+    
+    \clearpage
+    \pagenumbering{roman}
+    \setcounter{page}{1}
+    % list of figures
+    \listoffigures
+    \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+   
+    % list of tables
+    \listoftables
+    \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+
+    % list of code listings
+    \lstlistoflistings
+    \addcontentsline{toc}{chapter}{Codelistingverzeichnis}
+
+    \clearpage
+    \pagenumbering{arabic}
+    % main body of the report, separated by chapters
+    \include{001_Praxisprojekt}
+    \include{002_CleanArchitecture}
+    \include{003_ProgrammingPrinciples}
+    \include{004_Entwurfsmuster}
+    \include{005_UnitTest}
+    \include{006_Refactoring}    
+    
+
+\end{onehalfspace}
+
+\end{document}
