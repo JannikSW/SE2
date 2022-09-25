@@ -28,229 +28,230 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.btn_New = new System.Windows.Forms.Button();
+            this.btn_Load = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.lbl_Product = new System.Windows.Forms.Label();
+            this.lbl_Productkategory = new System.Windows.Forms.Label();
+            this.lbl_Storageplace = new System.Windows.Forms.Label();
+            this.lbl_Owner = new System.Windows.Forms.Label();
+            this.btn_addOwner = new System.Windows.Forms.Button();
+            this.btn_delOwner = new System.Windows.Forms.Button();
+            this.cb_Owner = new System.Windows.Forms.ComboBox();
+            this.dgv_Product = new System.Windows.Forms.DataGridView();
+            this.dgv_Productkategory = new System.Windows.Forms.DataGridView();
+            this.dgv_Storageplace = new System.Windows.Forms.DataGridView();
+            this.btn_addProduct = new System.Windows.Forms.Button();
+            this.btn_delProduct = new System.Windows.Forms.Button();
+            this.btn_delProductkategory = new System.Windows.Forms.Button();
+            this.btn_addProductkategory = new System.Windows.Forms.Button();
+            this.btn_delStorageplace = new System.Windows.Forms.Button();
+            this.btn_addStorageplace = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Product)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Productkategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Storageplace)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_New
             // 
-            this.button1.Location = new System.Drawing.Point(490, 410);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_New.Location = new System.Drawing.Point(490, 410);
+            this.btn_New.Name = "btn_New";
+            this.btn_New.Size = new System.Drawing.Size(75, 23);
+            this.btn_New.TabIndex = 0;
+            this.btn_New.Text = "New";
+            this.btn_New.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_Load
             // 
-            this.button2.Location = new System.Drawing.Point(580, 410);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Load";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Load.Location = new System.Drawing.Point(580, 410);
+            this.btn_Load.Name = "btn_Load";
+            this.btn_Load.Size = new System.Drawing.Size(75, 23);
+            this.btn_Load.TabIndex = 1;
+            this.btn_Load.Text = "Load";
+            this.btn_Load.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_Save
             // 
-            this.button3.Location = new System.Drawing.Point(670, 410);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Save.Location = new System.Drawing.Point(670, 410);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(75, 23);
+            this.btn_Save.TabIndex = 2;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lbl_Product
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Product:";
+            this.lbl_Product.AutoSize = true;
+            this.lbl_Product.Location = new System.Drawing.Point(10, 10);
+            this.lbl_Product.Name = "lbl_Product";
+            this.lbl_Product.Size = new System.Drawing.Size(52, 15);
+            this.lbl_Product.TabIndex = 3;
+            this.lbl_Product.Text = "Product:";
+            this.lbl_Product.UseWaitCursor = true;
             // 
-            // label2
+            // lbl_Productkategory
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(260, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Productkategory:";
+            this.lbl_Productkategory.AutoSize = true;
+            this.lbl_Productkategory.Location = new System.Drawing.Point(260, 10);
+            this.lbl_Productkategory.Name = "lbl_Productkategory";
+            this.lbl_Productkategory.Size = new System.Drawing.Size(98, 15);
+            this.lbl_Productkategory.TabIndex = 4;
+            this.lbl_Productkategory.Text = "Productkategory:";
             // 
-            // label3
+            // lbl_Storageplace
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(510, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Storageplace:";
+            this.lbl_Storageplace.AutoSize = true;
+            this.lbl_Storageplace.Location = new System.Drawing.Point(510, 9);
+            this.lbl_Storageplace.Name = "lbl_Storageplace";
+            this.lbl_Storageplace.Size = new System.Drawing.Size(78, 15);
+            this.lbl_Storageplace.TabIndex = 5;
+            this.lbl_Storageplace.Text = "Storageplace:";
             // 
-            // label4
+            // lbl_Owner
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 413);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Owner:";
+            this.lbl_Owner.AutoSize = true;
+            this.lbl_Owner.Location = new System.Drawing.Point(9, 413);
+            this.lbl_Owner.Name = "lbl_Owner";
+            this.lbl_Owner.Size = new System.Drawing.Size(45, 15);
+            this.lbl_Owner.TabIndex = 6;
+            this.lbl_Owner.Text = "Owner:";
             // 
-            // button4
+            // btn_addOwner
             // 
-            this.button4.Location = new System.Drawing.Point(210, 410);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(23, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_addOwner.Location = new System.Drawing.Point(210, 410);
+            this.btn_addOwner.Name = "btn_addOwner";
+            this.btn_addOwner.Size = new System.Drawing.Size(23, 23);
+            this.btn_addOwner.TabIndex = 7;
+            this.btn_addOwner.Text = "+";
+            this.btn_addOwner.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn_delOwner
             // 
-            this.button5.Location = new System.Drawing.Point(240, 410);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(23, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_delOwner.Location = new System.Drawing.Point(240, 410);
+            this.btn_delOwner.Name = "btn_delOwner";
+            this.btn_delOwner.Size = new System.Drawing.Size(23, 23);
+            this.btn_delOwner.TabIndex = 8;
+            this.btn_delOwner.Text = "-";
+            this.btn_delOwner.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cb_Owner
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(60, 410);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 23);
-            this.comboBox1.TabIndex = 9;
+            this.cb_Owner.FormattingEnabled = true;
+            this.cb_Owner.Location = new System.Drawing.Point(60, 410);
+            this.cb_Owner.Name = "cb_Owner";
+            this.cb_Owner.Size = new System.Drawing.Size(140, 23);
+            this.cb_Owner.TabIndex = 9;
             // 
-            // dataGridView1
+            // dgv_Product
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 200);
-            this.dataGridView1.TabIndex = 10;
+            this.dgv_Product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Product.Location = new System.Drawing.Point(10, 25);
+            this.dgv_Product.Name = "dgv_Product";
+            this.dgv_Product.RowTemplate.Height = 25;
+            this.dgv_Product.Size = new System.Drawing.Size(240, 200);
+            this.dgv_Product.TabIndex = 10;
             // 
-            // dataGridView2
+            // dgv_Productkategory
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(260, 25);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 200);
-            this.dataGridView2.TabIndex = 11;
+            this.dgv_Productkategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Productkategory.Location = new System.Drawing.Point(260, 25);
+            this.dgv_Productkategory.Name = "dgv_Productkategory";
+            this.dgv_Productkategory.RowTemplate.Height = 25;
+            this.dgv_Productkategory.Size = new System.Drawing.Size(240, 200);
+            this.dgv_Productkategory.TabIndex = 11;
             // 
-            // dataGridView3
+            // dgv_Storageplace
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(510, 25);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 25;
-            this.dataGridView3.Size = new System.Drawing.Size(240, 200);
-            this.dataGridView3.TabIndex = 12;
+            this.dgv_Storageplace.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Storageplace.Location = new System.Drawing.Point(510, 25);
+            this.dgv_Storageplace.Name = "dgv_Storageplace";
+            this.dgv_Storageplace.RowTemplate.Height = 25;
+            this.dgv_Storageplace.Size = new System.Drawing.Size(240, 200);
+            this.dgv_Storageplace.TabIndex = 12;
             // 
-            // button6
+            // btn_addProduct
             // 
-            this.button6.Location = new System.Drawing.Point(140, 230);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(50, 25);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "+";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_addProduct.Location = new System.Drawing.Point(140, 230);
+            this.btn_addProduct.Name = "btn_addProduct";
+            this.btn_addProduct.Size = new System.Drawing.Size(50, 25);
+            this.btn_addProduct.TabIndex = 13;
+            this.btn_addProduct.Text = "+";
+            this.btn_addProduct.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_delProduct
             // 
-            this.button7.Location = new System.Drawing.Point(200, 231);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(50, 25);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "-";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_delProduct.Location = new System.Drawing.Point(200, 231);
+            this.btn_delProduct.Name = "btn_delProduct";
+            this.btn_delProduct.Size = new System.Drawing.Size(50, 25);
+            this.btn_delProduct.TabIndex = 14;
+            this.btn_delProduct.Text = "-";
+            this.btn_delProduct.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btn_delProductkategory
             // 
-            this.button8.Location = new System.Drawing.Point(450, 230);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(50, 25);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "-";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_delProductkategory.Location = new System.Drawing.Point(450, 230);
+            this.btn_delProductkategory.Name = "btn_delProductkategory";
+            this.btn_delProductkategory.Size = new System.Drawing.Size(50, 25);
+            this.btn_delProductkategory.TabIndex = 16;
+            this.btn_delProductkategory.Text = "-";
+            this.btn_delProductkategory.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btn_addProductkategory
             // 
-            this.button9.Location = new System.Drawing.Point(390, 230);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 25);
-            this.button9.TabIndex = 15;
-            this.button9.Text = "+";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn_addProductkategory.Location = new System.Drawing.Point(390, 230);
+            this.btn_addProductkategory.Name = "btn_addProductkategory";
+            this.btn_addProductkategory.Size = new System.Drawing.Size(50, 25);
+            this.btn_addProductkategory.TabIndex = 15;
+            this.btn_addProductkategory.Text = "+";
+            this.btn_addProductkategory.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btn_delStorageplace
             // 
-            this.button10.Location = new System.Drawing.Point(700, 230);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(50, 25);
-            this.button10.TabIndex = 18;
-            this.button10.Text = "-";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn_delStorageplace.Location = new System.Drawing.Point(700, 230);
+            this.btn_delStorageplace.Name = "btn_delStorageplace";
+            this.btn_delStorageplace.Size = new System.Drawing.Size(50, 25);
+            this.btn_delStorageplace.TabIndex = 18;
+            this.btn_delStorageplace.Text = "-";
+            this.btn_delStorageplace.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btn_addStorageplace
             // 
-            this.button11.Location = new System.Drawing.Point(640, 230);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(50, 25);
-            this.button11.TabIndex = 17;
-            this.button11.Text = "+";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btn_addStorageplace.Location = new System.Drawing.Point(640, 230);
+            this.btn_addStorageplace.Name = "btn_addStorageplace";
+            this.btn_addStorageplace.Size = new System.Drawing.Size(50, 25);
+            this.btn_addStorageplace.TabIndex = 17;
+            this.btn_addStorageplace.Text = "+";
+            this.btn_addStorageplace.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_delStorageplace);
+            this.Controls.Add(this.btn_addStorageplace);
+            this.Controls.Add(this.btn_delProductkategory);
+            this.Controls.Add(this.btn_addProductkategory);
+            this.Controls.Add(this.btn_delProduct);
+            this.Controls.Add(this.btn_addProduct);
+            this.Controls.Add(this.dgv_Storageplace);
+            this.Controls.Add(this.dgv_Productkategory);
+            this.Controls.Add(this.dgv_Product);
+            this.Controls.Add(this.cb_Owner);
+            this.Controls.Add(this.btn_delOwner);
+            this.Controls.Add(this.btn_addOwner);
+            this.Controls.Add(this.lbl_Owner);
+            this.Controls.Add(this.lbl_Storageplace);
+            this.Controls.Add(this.lbl_Productkategory);
+            this.Controls.Add(this.lbl_Product);
+            this.Controls.Add(this.btn_Save);
+            this.Controls.Add(this.btn_Load);
+            this.Controls.Add(this.btn_New);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Productkategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Storageplace)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,24 +259,24 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Button button4;
-        private Button button5;
-        private ComboBox comboBox1;
-        private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
-        private DataGridView dataGridView3;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
+        private Button btn_New;
+        private Button btn_Load;
+        private Button btn_Save;
+        private Label lbl_Product;
+        private Label lbl_Productkategory;
+        private Label lbl_Storageplace;
+        private Label lbl_Owner;
+        private Button btn_addOwner;
+        private Button btn_delOwner;
+        private ComboBox cb_Owner;
+        private DataGridView dgv_Product;
+        private DataGridView dgv_Productkategory;
+        private DataGridView dgv_Storageplace;
+        private Button btn_addProduct;
+        private Button btn_delProduct;
+        private Button btn_delProductkategory;
+        private Button btn_addProductkategory;
+        private Button btn_delStorageplace;
+        private Button btn_addStorageplace;
     }
 }
