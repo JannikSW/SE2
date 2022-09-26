@@ -26,7 +26,22 @@
             }
             if (15 <= this.degree)
             {
-                this.coldness = degreeOfCold.frozen;
+                this.coldness = degreeOfCold.room;
+            }
+        }
+
+        public string coldnessString()
+        {
+            switch (coldness)
+            { 
+                case degreeOfCold.frozen:
+                    return "frozen";
+                case degreeOfCold.chilled:
+                    return "chilled";
+                case degreeOfCold.room:
+                    return "room";
+                default:
+                    return "";
             }
         }
     }

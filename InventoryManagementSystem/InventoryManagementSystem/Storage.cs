@@ -1,14 +1,21 @@
 ﻿namespace InventoryManagementSystem
 {
-    abstract class Storage
+    class Storage
     {
-        Temperature degreeOfCold;
+        string description;
         int capacity;
+        Temperature degreeOfCold;
 
-        Storage(int storageTemperature, int storageCapacity)
+        public Storage(string storageName, int storageCapacity, Temperature storageTemperature)
         {
-            this.degreeOfCold = new Temperature(storageTemperature);
+            this.description = storageName;
             this.capacity = storageCapacity;
+            this.degreeOfCold = storageTemperature;
+        }
+
+        public string infoString()
+        {
+            return this.description + this.capacity.ToString() + this.degreeOfCold.coldnessString();
         }
     }
 }
