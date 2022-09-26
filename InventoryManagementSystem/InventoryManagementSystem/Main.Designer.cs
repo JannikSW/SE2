@@ -134,7 +134,7 @@
             // 
             // btn_addOwner
             // 
-            this.btn_addOwner.Location = new System.Drawing.Point(210, 410);
+            this.btn_addOwner.Location = new System.Drawing.Point(200, 410);
             this.btn_addOwner.Name = "btn_addOwner";
             this.btn_addOwner.Size = new System.Drawing.Size(23, 23);
             this.btn_addOwner.TabIndex = 7;
@@ -143,7 +143,7 @@
             // 
             // btn_delOwner
             // 
-            this.btn_delOwner.Location = new System.Drawing.Point(240, 410);
+            this.btn_delOwner.Location = new System.Drawing.Point(227, 410);
             this.btn_delOwner.Name = "btn_delOwner";
             this.btn_delOwner.Size = new System.Drawing.Size(23, 23);
             this.btn_delOwner.TabIndex = 8;
@@ -153,7 +153,7 @@
             // cb_Owner
             // 
             this.cb_Owner.FormattingEnabled = true;
-            this.cb_Owner.Location = new System.Drawing.Point(60, 410);
+            this.cb_Owner.Location = new System.Drawing.Point(55, 410);
             this.cb_Owner.Name = "cb_Owner";
             this.cb_Owner.Size = new System.Drawing.Size(140, 23);
             this.cb_Owner.TabIndex = 9;
