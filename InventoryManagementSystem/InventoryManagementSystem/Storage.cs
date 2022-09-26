@@ -2,7 +2,13 @@
 {
     abstract class Storage
     {
-        protected Temperature degreeOfCold;
-        protected int capacity;
+        Temperature degreeOfCold;
+        int capacity;
+
+        Storage(int storageTemperature, int storageCapacity)
+        {
+            this.degreeOfCold = new Temperature(storageTemperature);
+            this.capacity = storageCapacity;
+        }
     }
 }

@@ -12,7 +12,7 @@
         int degree;
         degreeOfCold coldness;
 
-        Temperature(int temperature)
+        public Temperature(int temperature)
         {
             this.degree = temperature;
 
