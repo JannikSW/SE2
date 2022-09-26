@@ -4,10 +4,10 @@
     {
         int duration;
 
-        public Liquid(int durability, Temperature storageTemperature)
+        public Liquid(int durability, Temperature temperature)
         {
             this.name = "Liquid";
-            this.storageTemperature = storageTemperature;
+            this.temperature = temperature;
             this.duration = durability;
         }
     }

@@ -3,10 +3,10 @@
     class Seasoning : Productkategory
     {
 
-        public Seasoning(Temperature storageTemperature)
+        public Seasoning(Temperature temperature)
         {
             this.name = "Seasoning";
-            this.storageTemperature = storageTemperature;
+            this.temperature = temperature;
         }
     }
 }

@@ -3,6 +3,13 @@
     abstract class Productkategory
     {
         protected string name;
-        protected Temperature storageTemperature;
+        protected Temperature temperature;
+    }
+
+    public Productkategory()
+    {
+        return Food():
+        return Liquid():
+        return Seasoning();
     }
 }

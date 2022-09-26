@@ -24,6 +24,16 @@ namespace InventoryManagementSystem
             
         }
 
+        private void btn_addProductkategory_Click(object sender, EventArgs e)
+        {
+
+            string productkategoryName = teb_addProductkategoryName.Text;
+            Temperature productkategoryTemperature = new Temperature(int.Parse(teb_addProductkategoryTemperature.Text));
+
+            this.myProductkategory.Add(new Productkategory(productkategoryName, productkategoryTemperature));
+            this.UpdateView();
+        }
+
         private void btn_addStorageplace_Click(object sender, EventArgs e)
         {
             string storageName = teb_addStorageName.Text;
@@ -34,10 +44,6 @@ namespace InventoryManagementSystem
             this.UpdateView();
         }
 
-        private void btn_addProductkategory_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void UpdateView()
         {
