@@ -2,6 +2,5 @@
 {
     class Owner
     {
-        string name;
     }
 }

@@ -2,7 +2,14 @@
 {
     class Csv : Data
     {
-        
-        string name;
+        protected override string loadFile()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void saveData(string test)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

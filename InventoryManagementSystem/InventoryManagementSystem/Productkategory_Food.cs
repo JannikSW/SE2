@@ -4,9 +4,10 @@
     {
         int duration;
 
-        public Food(int durability)
+        public Food(int durability, Temperature storageTemperature)
         {
             this.name = "Food";
+            this.storageTemperature = storageTemperature;
             this.duration = durability;
         }
     }

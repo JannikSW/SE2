@@ -2,7 +2,7 @@
 {
     abstract class Data
     {
-        abstract protected saveData(File test);
-        abstract protected File loadFile();
+        abstract protected void saveData(string test);
+        abstract protected string loadFile();
     }
 }
