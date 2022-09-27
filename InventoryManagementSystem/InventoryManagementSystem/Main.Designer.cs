@@ -33,7 +33,7 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.lbl_Product = new System.Windows.Forms.Label();
             this.lbl_Productkategory = new System.Windows.Forms.Label();
-            this.lbl_Storage = new System.Windows.Forms.Label();
+            this.lbl_Storageplace = new System.Windows.Forms.Label();
             this.lbl_Owner = new System.Windows.Forms.Label();
             this.btn_addOwner = new System.Windows.Forms.Button();
             this.btn_delOwner = new System.Windows.Forms.Button();
@@ -47,11 +47,11 @@
             this.lbl_addProductName = new System.Windows.Forms.Label();
             this.lbl_addProductPrice = new System.Windows.Forms.Label();
             this.lbl_addProductKategory = new System.Windows.Forms.Label();
-            this.lbl_addProductStoragetemperature = new System.Windows.Forms.Label();
+            this.lbl_addProductStorageplace = new System.Windows.Forms.Label();
             this.teb_addProductName = new System.Windows.Forms.TextBox();
             this.teb_addProductPrice = new System.Windows.Forms.TextBox();
             this.teb_addProductProductkategory = new System.Windows.Forms.ComboBox();
-            this.teb_addProductStoragetemperature = new System.Windows.Forms.ComboBox();
+            this.teb_addProductStorageplace = new System.Windows.Forms.ComboBox();
             this.teb_addProductkategoryName = new System.Windows.Forms.TextBox();
             this.lbl_addProductkategoryName = new System.Windows.Forms.Label();
             this.lbl_addProductkategoryTemperature = new System.Windows.Forms.Label();
@@ -62,9 +62,11 @@
             this.teb_addStorageTemperature = new System.Windows.Forms.TextBox();
             this.teb_addStorageCapacity = new System.Windows.Forms.TextBox();
             this.lbl_addStorageCapacity = new System.Windows.Forms.Label();
-            this.liv_Storage = new System.Windows.Forms.ListView();
+            this.liv_Storageplace = new System.Windows.Forms.ListView();
             this.liv_Productkategory = new System.Windows.Forms.ListView();
             this.liv_Product = new System.Windows.Forms.ListView();
+            this.teb_addProductkategoryDurability = new System.Windows.Forms.TextBox();
+            this.lbl_addProductkategoryDurability = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_New
@@ -113,14 +115,14 @@
             this.lbl_Productkategory.TabIndex = 4;
             this.lbl_Productkategory.Text = "Productkategory:";
             // 
-            // lbl_Storage
+            // lbl_Storageplace
             // 
-            this.lbl_Storage.AutoSize = true;
-            this.lbl_Storage.Location = new System.Drawing.Point(510, 9);
-            this.lbl_Storage.Name = "lbl_Storage";
-            this.lbl_Storage.Size = new System.Drawing.Size(50, 15);
-            this.lbl_Storage.TabIndex = 5;
-            this.lbl_Storage.Text = "Storage:";
+            this.lbl_Storageplace.AutoSize = true;
+            this.lbl_Storageplace.Location = new System.Drawing.Point(510, 9);
+            this.lbl_Storageplace.Name = "lbl_Storageplace";
+            this.lbl_Storageplace.Size = new System.Drawing.Size(78, 15);
+            this.lbl_Storageplace.TabIndex = 5;
+            this.lbl_Storageplace.Text = "Storageplace:";
             // 
             // lbl_Owner
             // 
@@ -243,15 +245,15 @@
             this.lbl_addProductKategory.Text = "Productkategory:";
             this.lbl_addProductKategory.UseWaitCursor = true;
             // 
-            // lbl_addProductStoragetemperature
+            // lbl_addProductStorageplace
             // 
-            this.lbl_addProductStoragetemperature.AutoSize = true;
-            this.lbl_addProductStoragetemperature.Location = new System.Drawing.Point(10, 350);
-            this.lbl_addProductStoragetemperature.Name = "lbl_addProductStoragetemperature";
-            this.lbl_addProductStoragetemperature.Size = new System.Drawing.Size(115, 15);
-            this.lbl_addProductStoragetemperature.TabIndex = 22;
-            this.lbl_addProductStoragetemperature.Text = "Storagetemperature:";
-            this.lbl_addProductStoragetemperature.UseWaitCursor = true;
+            this.lbl_addProductStorageplace.AutoSize = true;
+            this.lbl_addProductStorageplace.Location = new System.Drawing.Point(10, 350);
+            this.lbl_addProductStorageplace.Name = "lbl_addProductStorageplace";
+            this.lbl_addProductStorageplace.Size = new System.Drawing.Size(78, 15);
+            this.lbl_addProductStorageplace.TabIndex = 22;
+            this.lbl_addProductStorageplace.Text = "Storageplace:";
+            this.lbl_addProductStorageplace.UseWaitCursor = true;
             // 
             // teb_addProductName
             // 
@@ -275,13 +277,13 @@
             this.teb_addProductProductkategory.Size = new System.Drawing.Size(100, 23);
             this.teb_addProductProductkategory.TabIndex = 25;
             // 
-            // teb_addProductStoragetemperature
+            // teb_addProductStorageplace
             // 
-            this.teb_addProductStoragetemperature.FormattingEnabled = true;
-            this.teb_addProductStoragetemperature.Location = new System.Drawing.Point(150, 347);
-            this.teb_addProductStoragetemperature.Name = "teb_addProductStoragetemperature";
-            this.teb_addProductStoragetemperature.Size = new System.Drawing.Size(100, 23);
-            this.teb_addProductStoragetemperature.TabIndex = 26;
+            this.teb_addProductStorageplace.FormattingEnabled = true;
+            this.teb_addProductStorageplace.Location = new System.Drawing.Point(150, 347);
+            this.teb_addProductStorageplace.Name = "teb_addProductStorageplace";
+            this.teb_addProductStorageplace.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductStorageplace.TabIndex = 26;
             // 
             // teb_addProductkategoryName
             // 
@@ -368,13 +370,13 @@
             this.lbl_addStorageCapacity.Text = "Capacity:";
             this.lbl_addStorageCapacity.UseWaitCursor = true;
             // 
-            // liv_Storage
+            // liv_Storageplace
             // 
-            this.liv_Storage.Location = new System.Drawing.Point(510, 25);
-            this.liv_Storage.Name = "liv_Storage";
-            this.liv_Storage.Size = new System.Drawing.Size(240, 200);
-            this.liv_Storage.TabIndex = 38;
-            this.liv_Storage.UseCompatibleStateImageBehavior = false;
+            this.liv_Storageplace.Location = new System.Drawing.Point(510, 25);
+            this.liv_Storageplace.Name = "liv_Storageplace";
+            this.liv_Storageplace.Size = new System.Drawing.Size(240, 200);
+            this.liv_Storageplace.TabIndex = 38;
+            this.liv_Storageplace.UseCompatibleStateImageBehavior = false;
             // 
             // liv_Productkategory
             // 
@@ -392,14 +394,33 @@
             this.liv_Product.TabIndex = 40;
             this.liv_Product.UseCompatibleStateImageBehavior = false;
             // 
+            // teb_addProductkategoryDurability
+            // 
+            this.teb_addProductkategoryDurability.Location = new System.Drawing.Point(400, 322);
+            this.teb_addProductkategoryDurability.Name = "teb_addProductkategoryDurability";
+            this.teb_addProductkategoryDurability.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductkategoryDurability.TabIndex = 42;
+            // 
+            // lbl_addProductkategoryDurability
+            // 
+            this.lbl_addProductkategoryDurability.AutoSize = true;
+            this.lbl_addProductkategoryDurability.Location = new System.Drawing.Point(260, 325);
+            this.lbl_addProductkategoryDurability.Name = "lbl_addProductkategoryDurability";
+            this.lbl_addProductkategoryDurability.Size = new System.Drawing.Size(61, 15);
+            this.lbl_addProductkategoryDurability.TabIndex = 41;
+            this.lbl_addProductkategoryDurability.Text = "Durability:";
+            this.lbl_addProductkategoryDurability.UseWaitCursor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.teb_addProductkategoryDurability);
+            this.Controls.Add(this.lbl_addProductkategoryDurability);
             this.Controls.Add(this.liv_Product);
             this.Controls.Add(this.liv_Productkategory);
-            this.Controls.Add(this.liv_Storage);
+            this.Controls.Add(this.liv_Storageplace);
             this.Controls.Add(this.teb_addStorageCapacity);
             this.Controls.Add(this.lbl_addStorageCapacity);
             this.Controls.Add(this.teb_addStorageTemperature);
@@ -410,11 +431,11 @@
             this.Controls.Add(this.lbl_addProductkategoryTemperature);
             this.Controls.Add(this.teb_addProductkategoryName);
             this.Controls.Add(this.lbl_addProductkategoryName);
-            this.Controls.Add(this.teb_addProductStoragetemperature);
+            this.Controls.Add(this.teb_addProductStorageplace);
             this.Controls.Add(this.teb_addProductProductkategory);
             this.Controls.Add(this.teb_addProductPrice);
             this.Controls.Add(this.teb_addProductName);
-            this.Controls.Add(this.lbl_addProductStoragetemperature);
+            this.Controls.Add(this.lbl_addProductStorageplace);
             this.Controls.Add(this.lbl_addProductKategory);
             this.Controls.Add(this.lbl_addProductPrice);
             this.Controls.Add(this.lbl_addProductName);
@@ -428,7 +449,7 @@
             this.Controls.Add(this.btn_delOwner);
             this.Controls.Add(this.btn_addOwner);
             this.Controls.Add(this.lbl_Owner);
-            this.Controls.Add(this.lbl_Storage);
+            this.Controls.Add(this.lbl_Storageplace);
             this.Controls.Add(this.lbl_Productkategory);
             this.Controls.Add(this.lbl_Product);
             this.Controls.Add(this.btn_Save);
@@ -448,7 +469,7 @@
         private Button btn_Save;
         private Label lbl_Product;
         private Label lbl_Productkategory;
-        private Label lbl_Storage;
+        private Label lbl_Storageplace;
         private Label lbl_Owner;
         private Button btn_addOwner;
         private Button btn_delOwner;
@@ -462,11 +483,11 @@
         private Label lbl_addProductName;
         private Label lbl_addProductPrice;
         private Label lbl_addProductKategory;
-        private Label lbl_addProductStoragetemperature;
+        private Label lbl_addProductStorageplace;
         private TextBox teb_addProductName;
         private TextBox teb_addProductPrice;
         private ComboBox teb_addProductProductkategory;
-        private ComboBox teb_addProductStoragetemperature;
+        private ComboBox teb_addProductStorageplace;
         private TextBox teb_addProductkategoryName;
         private Label lbl_addProductkategoryName;
         private Label lbl_addProductkategoryTemperature;
@@ -477,8 +498,10 @@
         private TextBox teb_addStorageTemperature;
         private TextBox teb_addStorageCapacity;
         private Label lbl_addStorageCapacity;
-        private ListView liv_Storage;
+        private ListView liv_Storageplace;
         private ListView liv_Productkategory;
         private ListView liv_Product;
+        private TextBox teb_addProductkategoryDurability;
+        private Label lbl_addProductkategoryDurability;
     }
 }

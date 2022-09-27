@@ -1,12 +1,12 @@
 ﻿namespace InventoryManagementSystem
 {
-    class Storage
+    class Storageplace
     {
         string description;
         int capacity;
         Temperature degreeOfCold;
 
-        public Storage(string storageName, int storageCapacity, Temperature storageTemperature)
+        public Storageplace(string storageName, int storageCapacity, Temperature storageTemperature)
         {
             this.description = storageName;
             this.capacity = storageCapacity;
