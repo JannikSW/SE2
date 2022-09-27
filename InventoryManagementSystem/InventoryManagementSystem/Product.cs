@@ -14,5 +14,10 @@
             this.productkategory = productkategory;
             this.temperature = storageTemperature;
         }
+
+        public string infoString()
+        {
+            return this.name + this.price.ToString() + this.productkategory.infoSmallString() + this.productkategory.infoSmallString();
+        }
     }
 }

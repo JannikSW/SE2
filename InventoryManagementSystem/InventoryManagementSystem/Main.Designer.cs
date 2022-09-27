@@ -37,7 +37,7 @@
             this.lbl_Owner = new System.Windows.Forms.Label();
             this.btn_addOwner = new System.Windows.Forms.Button();
             this.btn_delOwner = new System.Windows.Forms.Button();
-            this.cb_Owner = new System.Windows.Forms.ComboBox();
+            this.cob_Owner = new System.Windows.Forms.ComboBox();
             this.btn_addProduct = new System.Windows.Forms.Button();
             this.btn_delProduct = new System.Windows.Forms.Button();
             this.btn_delProductkategory = new System.Windows.Forms.Button();
@@ -50,8 +50,8 @@
             this.lbl_addProductStorageplace = new System.Windows.Forms.Label();
             this.teb_addProductName = new System.Windows.Forms.TextBox();
             this.teb_addProductPrice = new System.Windows.Forms.TextBox();
-            this.teb_addProductProductkategory = new System.Windows.Forms.ComboBox();
-            this.teb_addProductStorageplace = new System.Windows.Forms.ComboBox();
+            this.cob_addProductProductkategory = new System.Windows.Forms.ComboBox();
+            this.cob_addProductStorageplace = new System.Windows.Forms.ComboBox();
             this.teb_addProductkategoryName = new System.Windows.Forms.TextBox();
             this.lbl_addProductkategoryName = new System.Windows.Forms.Label();
             this.lbl_addProductkategoryTemperature = new System.Windows.Forms.Label();
@@ -151,13 +151,13 @@
             this.btn_delOwner.Text = "-";
             this.btn_delOwner.UseVisualStyleBackColor = true;
             // 
-            // cb_Owner
+            // cob_Owner
             // 
-            this.cb_Owner.FormattingEnabled = true;
-            this.cb_Owner.Location = new System.Drawing.Point(55, 410);
-            this.cb_Owner.Name = "cb_Owner";
-            this.cb_Owner.Size = new System.Drawing.Size(140, 23);
-            this.cb_Owner.TabIndex = 9;
+            this.cob_Owner.FormattingEnabled = true;
+            this.cob_Owner.Location = new System.Drawing.Point(55, 410);
+            this.cob_Owner.Name = "cob_Owner";
+            this.cob_Owner.Size = new System.Drawing.Size(140, 23);
+            this.cob_Owner.TabIndex = 9;
             // 
             // btn_addProduct
             // 
@@ -269,21 +269,21 @@
             this.teb_addProductPrice.Size = new System.Drawing.Size(100, 23);
             this.teb_addProductPrice.TabIndex = 24;
             // 
-            // teb_addProductProductkategory
+            // cob_addProductProductkategory
             // 
-            this.teb_addProductProductkategory.FormattingEnabled = true;
-            this.teb_addProductProductkategory.Location = new System.Drawing.Point(150, 322);
-            this.teb_addProductProductkategory.Name = "teb_addProductProductkategory";
-            this.teb_addProductProductkategory.Size = new System.Drawing.Size(100, 23);
-            this.teb_addProductProductkategory.TabIndex = 25;
+            this.cob_addProductProductkategory.FormattingEnabled = true;
+            this.cob_addProductProductkategory.Location = new System.Drawing.Point(150, 322);
+            this.cob_addProductProductkategory.Name = "cob_addProductProductkategory";
+            this.cob_addProductProductkategory.Size = new System.Drawing.Size(100, 23);
+            this.cob_addProductProductkategory.TabIndex = 25;
             // 
-            // teb_addProductStorageplace
+            // cob_addProductStorageplace
             // 
-            this.teb_addProductStorageplace.FormattingEnabled = true;
-            this.teb_addProductStorageplace.Location = new System.Drawing.Point(150, 347);
-            this.teb_addProductStorageplace.Name = "teb_addProductStorageplace";
-            this.teb_addProductStorageplace.Size = new System.Drawing.Size(100, 23);
-            this.teb_addProductStorageplace.TabIndex = 26;
+            this.cob_addProductStorageplace.FormattingEnabled = true;
+            this.cob_addProductStorageplace.Location = new System.Drawing.Point(150, 347);
+            this.cob_addProductStorageplace.Name = "cob_addProductStorageplace";
+            this.cob_addProductStorageplace.Size = new System.Drawing.Size(100, 23);
+            this.cob_addProductStorageplace.TabIndex = 26;
             // 
             // teb_addProductkategoryName
             // 
@@ -431,8 +431,8 @@
             this.Controls.Add(this.lbl_addProductkategoryTemperature);
             this.Controls.Add(this.teb_addProductkategoryName);
             this.Controls.Add(this.lbl_addProductkategoryName);
-            this.Controls.Add(this.teb_addProductStorageplace);
-            this.Controls.Add(this.teb_addProductProductkategory);
+            this.Controls.Add(this.cob_addProductStorageplace);
+            this.Controls.Add(this.cob_addProductProductkategory);
             this.Controls.Add(this.teb_addProductPrice);
             this.Controls.Add(this.teb_addProductName);
             this.Controls.Add(this.lbl_addProductStorageplace);
@@ -445,7 +445,7 @@
             this.Controls.Add(this.btn_addProductkategory);
             this.Controls.Add(this.btn_delProduct);
             this.Controls.Add(this.btn_addProduct);
-            this.Controls.Add(this.cb_Owner);
+            this.Controls.Add(this.cob_Owner);
             this.Controls.Add(this.btn_delOwner);
             this.Controls.Add(this.btn_addOwner);
             this.Controls.Add(this.lbl_Owner);
@@ -473,7 +473,7 @@
         private Label lbl_Owner;
         private Button btn_addOwner;
         private Button btn_delOwner;
-        private ComboBox cb_Owner;
+        private ComboBox cob_Owner;
         private Button btn_addProduct;
         private Button btn_delProduct;
         private Button btn_delProductkategory;
@@ -486,8 +486,8 @@
         private Label lbl_addProductStorageplace;
         private TextBox teb_addProductName;
         private TextBox teb_addProductPrice;
-        private ComboBox teb_addProductProductkategory;
-        private ComboBox teb_addProductStorageplace;
+        private ComboBox cob_addProductProductkategory;
+        private ComboBox cob_addProductStorageplace;
         private TextBox teb_addProductkategoryName;
         private Label lbl_addProductkategoryName;
         private Label lbl_addProductkategoryTemperature;

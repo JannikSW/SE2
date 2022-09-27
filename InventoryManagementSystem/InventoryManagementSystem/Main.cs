@@ -56,15 +56,29 @@ namespace InventoryManagementSystem
 
         private void UpdateView()
         {
-            // myProduct
-
+            liv_Product.Items.Clear();
             liv_Productkategory.Items.Clear();
-            foreach (Productkategory tempProductkategory in this.myProductkategory)
-            liv_Productkategory.Items.Add(tempProductkategory.infoString());
-
             liv_Storageplace.Items.Clear();
-            foreach(Storageplace tempStorageplace in this.myStorageplace)
-            liv_Storageplace.Items.Add(tempStorageplace.infoString());
+            cob_addProductProductkategory.Items.Clear();
+            cob_addProductStorageplace.Items.Clear();
+            cob_Owner.Items.Clear();
+
+            foreach (Product tempProduct in this.myProduct)
+            {
+                liv_Productkategory.Items.Add(tempProduct.infoString());
+            }
+
+            foreach (Productkategory tempProductkategory in this.myProductkategory)
+            {
+                liv_Productkategory.Items.Add(tempProductkategory.infoString());
+                cob_addProductProductkategory.Items.Add(tempProductkategory.infoSmallString());
+            }
+
+            foreach (Storageplace tempStorageplace in this.myStorageplace)
+            {
+                liv_Storageplace.Items.Add(tempStorageplace.infoString());
+                cob_addProductStorageplace.Items.Add(tempStorageplace.infoSmallString());
+            }
 
             // myOwner
         }

@@ -12,6 +12,10 @@
             this.capacity = storageCapacity;
             this.degreeOfCold = storageTemperature;
         }
+        public string infoSmallString()
+        {
+            return this.description;
+        }
 
         public string infoString()
         {

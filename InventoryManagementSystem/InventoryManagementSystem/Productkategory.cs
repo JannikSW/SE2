@@ -24,6 +24,11 @@
             }
         }
 
+        public string infoSmallString()
+        {
+            return this.name;
+        }
+
         public string infoString()
         {
             return this.name + this.temperature.coldnessString() + this.duration.ToString();
