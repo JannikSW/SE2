@@ -7,6 +7,11 @@
         public Owner(string name)
         {
             this.name = name;
-        }   
+        }
+
+        public string infoString()
+        {
+            return this.name;
+        }
     }
 }

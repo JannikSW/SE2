@@ -79,8 +79,11 @@ namespace InventoryManagementSystem
                 liv_Storageplace.Items.Add(tempStorageplace.infoString());
                 cob_addProductStorageplace.Items.Add(tempStorageplace.infoSmallString());
             }
-
-            // myOwner
+            
+            foreach (Owner tempOwner in this.myOwner)
+            {
+                cob_addProductStorageplace.Items.Add(tempOwner.infoString());
+            }
         }
 
     }
