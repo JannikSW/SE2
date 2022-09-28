@@ -1,7 +1,11 @@
 ﻿namespace InventoryManagementSystem
 {
-    class Temperature
+    internal class Temperature
     {
+        protected int minTemperature;
+        protected int maxTemperature;
+
+
         enum degreeOfCold
         {
             frozen,

@@ -67,6 +67,9 @@
             this.liv_Product = new System.Windows.Forms.ListView();
             this.teb_addProductkategoryDurability = new System.Windows.Forms.TextBox();
             this.lbl_addProductkategoryDurability = new System.Windows.Forms.Label();
+            this.Name = new System.Windows.Forms.ColumnHeader();
+            this.Capacity = new System.Windows.Forms.ColumnHeader();
+            this.Temperature = new System.Windows.Forms.ColumnHeader();
             this.SuspendLayout();
             // 
             // btn_New
@@ -86,6 +89,7 @@
             this.btn_Load.TabIndex = 1;
             this.btn_Load.Text = "Load";
             this.btn_Load.UseVisualStyleBackColor = true;
+            this.btn_Load.Click += new System.EventHandler(this.btn_Load_Click);
             // 
             // btn_Save
             // 
@@ -372,6 +376,10 @@
             // 
             // liv_Storageplace
             // 
+            this.liv_Storageplace.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Name,
+            this.Capacity,
+            this.Temperature});
             this.liv_Storageplace.Location = new System.Drawing.Point(510, 25);
             this.liv_Storageplace.Name = "liv_Storageplace";
             this.liv_Storageplace.Size = new System.Drawing.Size(240, 200);
@@ -503,5 +511,8 @@
         private ListView liv_Product;
         private TextBox teb_addProductkategoryDurability;
         private Label lbl_addProductkategoryDurability;
+        private ColumnHeader Name;
+        private ColumnHeader Capacity;
+        private ColumnHeader Temperature;
     }
 }

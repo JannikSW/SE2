@@ -1,0 +1,11 @@
+Product
+Meat,5.99,Food,FreezerKitchen
+Water,0.79,Liquid,ShelfKitchen
+Productkategory
+Food,12,5
+Liquid,20,100
+Storageplace
+Durability
+Storage
+FreezerKitchen,20,5
+ShelfKitchen,10,20

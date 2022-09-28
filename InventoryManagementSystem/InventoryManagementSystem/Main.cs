@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System;
 using System.Net.Http.Headers;
+using System.Windows.Forms;
 
 namespace InventoryManagementSystem
 {
@@ -86,5 +87,26 @@ namespace InventoryManagementSystem
             }
         }
 
+        private void btn_Load_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog frm_loadFile = new OpenFileDialog();
+            string filePath = "";
+            string fileData = "";
+            
+            frm_loadFile.InitialDirectory = "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\Testdaten";
+            frm_loadFile.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            frm_loadFile.FilterIndex = 1;
+            frm_loadFile.RestoreDirectory = true;
+            
+            if (frm_loadFile.ShowDialog() == DialogResult.OK)
+            {
+                filePath = frm_loadFile.FileName;
+                var fileStream = frm_loadFile.OpenFile();
+                using (StreamReader reader = new StreamReader(fileStream))
+                {
+                    fileData = reader.ReadToEnd();
+                }
+            }
+        }
     }
 }
