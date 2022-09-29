@@ -4,14 +4,7 @@
     {
         protected int minTemperature;
         protected int maxTemperature;
-
-
-        enum degreeOfCold
-        {
-            frozen,
-            chilled,
-            room
-        };
+        protected string dimension;
 
         int degree;
         degreeOfCold coldness;
