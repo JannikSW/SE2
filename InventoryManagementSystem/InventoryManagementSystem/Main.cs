@@ -91,9 +91,8 @@ namespace InventoryManagementSystem
         {
             OpenFileDialog frm_loadFile = new OpenFileDialog();
             string filePath = "";
-            string fileData = "";
             
-            frm_loadFile.InitialDirectory = "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\Testdaten";
+            frm_loadFile.InitialDirectory = "C:\\";
             frm_loadFile.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
             frm_loadFile.FilterIndex = 1;
             frm_loadFile.RestoreDirectory = true;
@@ -101,12 +100,19 @@ namespace InventoryManagementSystem
             if (frm_loadFile.ShowDialog() == DialogResult.OK)
             {
                 filePath = frm_loadFile.FileName;
-                var fileStream = frm_loadFile.OpenFile();
-                using (StreamReader reader = new StreamReader(fileStream))
+                if (filePath.EndsWith(".csv"))
                 {
-                    fileData = reader.ReadToEnd();
+                    Csv myCsv = new Csv(filePath);
                 }
+
+               // var fileStream = frm_loadFile.OpenFile();
+              //  using (StreamReader reader = new StreamReader(fileStream))
+              //  {
+               //     fileData = reader.ReadToEnd();
+             //   }
             }
+
+           // Csv myCsv = new Csv(fileData);            
         }
     }
 }

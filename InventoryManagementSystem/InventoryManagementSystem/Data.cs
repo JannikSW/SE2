@@ -2,15 +2,23 @@
 {
     abstract class Data
     {
-        protected List<Product> dataProduct;
-        protected List<Productkategory> dataProductkategory;
-        protected List<Storageplace> dataStorageplace;
-        protected List<Owner> dataOwner;
+        internal List<Product> dataProduct;
+        internal List<Productkategory> dataProductkategory;
+        internal List<Storageplace> dataStorageplace;
+        internal List<Owner> dataOwner;
 
-        protected string path;
+        protected string path = "";
 
-        abstract protected string loadData();
+        abstract protected void loadData();
 
         abstract protected void saveData();
+
+        protected Price stringToPrice(string input)
+        {
+            Price output;
+
+            output = new Price(5, 5);
+            return output;
+        }
     }
 }

@@ -5,7 +5,7 @@
         protected int big;
         protected int small;
 
-        Price(int bigPrice, int smallPrice)
+        internal Price(int bigPrice, int smallPrice)
         {
             this.big = bigPrice;
             this.small = smallPrice;
