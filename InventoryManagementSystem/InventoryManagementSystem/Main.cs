@@ -20,6 +20,7 @@ namespace InventoryManagementSystem
             this.myProduct         = new List<Product>();
             this.myProductkategory = new List<Productkategory>();
             this.myStorageplace    = new List<Storageplace>();
+            this.myOwner           = new List<Owner>();
         }
 
         private void btn_addProduct_Click(object sender, EventArgs e)
@@ -36,24 +37,23 @@ namespace InventoryManagementSystem
 
         private void btn_addProductkategory_Click(object sender, EventArgs e)
         {
-            string productkategoryName = teb_addProductkategoryName.Text;
-            Temperature productkategoryTemperature = new Temperature(int.Parse(teb_addProductkategoryTemperature.Text));
-            int productkategoryDurability = int.Parse(teb_addProductkategoryDurability.Text);
+            //string productkategoryName = teb_addProductkategoryName.Text;
+            //Temperature productkategoryTemperature = new Temperature(int.Parse(teb_addProductkategoryTemperature.Text));
+            //int productkategoryDurability = int.Parse(teb_addProductkategoryDurability.Text);
 
-            this.myProductkategory.Add(new Productkategory(productkategoryName, productkategoryTemperature, productkategoryDurability));
-            this.UpdateView();
+            //this.myProductkategory.Add(new Productkategory(productkategoryName, productkategoryTemperature, productkategoryDurability));
+            //this.UpdateView();
         }
 
         private void btn_addStorageplace_Click(object sender, EventArgs e)
         {
-            string storageName = teb_addStorageName.Text;
-            int storageCapacity = int.Parse(teb_addStorageCapacity.Text);
-            Temperature storageTemperature = new Temperature(int.Parse(teb_addStorageTemperature.Text));
+            //string storageName = teb_addStorageName.Text;
+            //int storageCapacity = int.Parse(teb_addStorageCapacity.Text);
+            //Temperature storageTemperature = new Temperature(int.Parse(teb_addStorageTemperature.Text));
 
-            this.myStorageplace.Add(new Storageplace(storageName, storageCapacity, storageTemperature));
-            this.UpdateView();
+            //this.myStorageplace.Add(new Storageplace(storageName, storageCapacity, storageTemperature));
+            //this.UpdateView();
         }
-
 
         private void UpdateView()
         {
@@ -83,7 +83,7 @@ namespace InventoryManagementSystem
             
             foreach (Owner tempOwner in this.myOwner)
             {
-                cob_addProductStorageplace.Items.Add(tempOwner.infoString());
+                cob_Owner.Items.Add(tempOwner.infoString());
             }
         }
 

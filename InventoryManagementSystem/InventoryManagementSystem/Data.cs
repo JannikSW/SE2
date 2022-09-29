@@ -9,8 +9,8 @@
 
         protected string path;
 
-        abstract protected string loadData(string data);
+        abstract protected string loadData();
 
-        abstract protected void saveData(string data);
+        abstract protected void saveData();
     }
 }

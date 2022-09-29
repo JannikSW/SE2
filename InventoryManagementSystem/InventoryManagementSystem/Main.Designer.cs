@@ -63,9 +63,6 @@
             this.teb_addStorageCapacity = new System.Windows.Forms.TextBox();
             this.lbl_addStorageCapacity = new System.Windows.Forms.Label();
             this.liv_Storageplace = new System.Windows.Forms.ListView();
-            this.Name = new System.Windows.Forms.ColumnHeader();
-            this.Capacity = new System.Windows.Forms.ColumnHeader();
-            this.Temperature = new System.Windows.Forms.ColumnHeader();
             this.liv_Productkategory = new System.Windows.Forms.ListView();
             this.liv_Product = new System.Windows.Forms.ListView();
             this.teb_addProductkategoryDurability = new System.Windows.Forms.TextBox();
@@ -378,10 +375,6 @@
             // 
             // liv_Storageplace
             // 
-            this.liv_Storageplace.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Name,
-            this.Capacity,
-            this.Temperature});
             this.liv_Storageplace.Location = new System.Drawing.Point(530, 25);
             this.liv_Storageplace.Name = "liv_Storageplace";
             this.liv_Storageplace.Size = new System.Drawing.Size(250, 200);
@@ -532,9 +525,6 @@
         private ListView liv_Product;
         private TextBox teb_addProductkategoryDurability;
         private Label lbl_addProductkategoryDurability;
-        private ColumnHeader Name;
-        private ColumnHeader Capacity;
-        private ColumnHeader Temperature;
         private TextBox teb_addProductStoragedate;
         private Label lbl_addProductStoragedate;
     }

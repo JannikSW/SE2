@@ -3,16 +3,12 @@
     class Csv : Data
     {      
 
-        protected override string loadData(string data)
+        protected override string loadData()
         {
-            //this.dataProduct = 
-            //this.dataProductkategory =
-            //this.dataStorageplace =
-            //this.dataOwner = 
             return "";
         }
 
-        protected override void saveData(string savePath)
+        protected override void saveData()
         {
             throw new NotImplementedException();
         }

@@ -13,6 +13,11 @@
             this.temperature = temperatureStorage;
         }
 
+        internal string infoSmallString()
+        {
+            return this.name;
+        }
+
         internal string infoString()
         {
             return this.name + "" + this.capacity.ToString() + "" + this.temperature.infoString();
