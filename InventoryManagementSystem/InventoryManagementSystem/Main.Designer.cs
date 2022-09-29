@@ -63,18 +63,20 @@
             this.teb_addStorageCapacity = new System.Windows.Forms.TextBox();
             this.lbl_addStorageCapacity = new System.Windows.Forms.Label();
             this.liv_Storageplace = new System.Windows.Forms.ListView();
+            this.Name = new System.Windows.Forms.ColumnHeader();
+            this.Capacity = new System.Windows.Forms.ColumnHeader();
+            this.Temperature = new System.Windows.Forms.ColumnHeader();
             this.liv_Productkategory = new System.Windows.Forms.ListView();
             this.liv_Product = new System.Windows.Forms.ListView();
             this.teb_addProductkategoryDurability = new System.Windows.Forms.TextBox();
             this.lbl_addProductkategoryDurability = new System.Windows.Forms.Label();
-            this.Name = new System.Windows.Forms.ColumnHeader();
-            this.Capacity = new System.Windows.Forms.ColumnHeader();
-            this.Temperature = new System.Windows.Forms.ColumnHeader();
+            this.teb_addProductStoragedate = new System.Windows.Forms.TextBox();
+            this.lbl_addProductStoragedate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_New
             // 
-            this.btn_New.Location = new System.Drawing.Point(490, 410);
+            this.btn_New.Location = new System.Drawing.Point(545, 420);
             this.btn_New.Name = "btn_New";
             this.btn_New.Size = new System.Drawing.Size(75, 23);
             this.btn_New.TabIndex = 0;
@@ -83,7 +85,7 @@
             // 
             // btn_Load
             // 
-            this.btn_Load.Location = new System.Drawing.Point(580, 410);
+            this.btn_Load.Location = new System.Drawing.Point(625, 420);
             this.btn_Load.Name = "btn_Load";
             this.btn_Load.Size = new System.Drawing.Size(75, 23);
             this.btn_Load.TabIndex = 1;
@@ -93,7 +95,7 @@
             // 
             // btn_Save
             // 
-            this.btn_Save.Location = new System.Drawing.Point(670, 410);
+            this.btn_Save.Location = new System.Drawing.Point(705, 420);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(75, 23);
             this.btn_Save.TabIndex = 2;
@@ -113,7 +115,7 @@
             // lbl_Productkategory
             // 
             this.lbl_Productkategory.AutoSize = true;
-            this.lbl_Productkategory.Location = new System.Drawing.Point(260, 10);
+            this.lbl_Productkategory.Location = new System.Drawing.Point(270, 10);
             this.lbl_Productkategory.Name = "lbl_Productkategory";
             this.lbl_Productkategory.Size = new System.Drawing.Size(98, 15);
             this.lbl_Productkategory.TabIndex = 4;
@@ -122,7 +124,7 @@
             // lbl_Storageplace
             // 
             this.lbl_Storageplace.AutoSize = true;
-            this.lbl_Storageplace.Location = new System.Drawing.Point(510, 9);
+            this.lbl_Storageplace.Location = new System.Drawing.Point(530, 10);
             this.lbl_Storageplace.Name = "lbl_Storageplace";
             this.lbl_Storageplace.Size = new System.Drawing.Size(78, 15);
             this.lbl_Storageplace.TabIndex = 5;
@@ -131,7 +133,7 @@
             // lbl_Owner
             // 
             this.lbl_Owner.AutoSize = true;
-            this.lbl_Owner.Location = new System.Drawing.Point(9, 413);
+            this.lbl_Owner.Location = new System.Drawing.Point(10, 423);
             this.lbl_Owner.Name = "lbl_Owner";
             this.lbl_Owner.Size = new System.Drawing.Size(45, 15);
             this.lbl_Owner.TabIndex = 6;
@@ -139,7 +141,7 @@
             // 
             // btn_addOwner
             // 
-            this.btn_addOwner.Location = new System.Drawing.Point(200, 410);
+            this.btn_addOwner.Location = new System.Drawing.Point(270, 420);
             this.btn_addOwner.Name = "btn_addOwner";
             this.btn_addOwner.Size = new System.Drawing.Size(23, 23);
             this.btn_addOwner.TabIndex = 7;
@@ -148,7 +150,7 @@
             // 
             // btn_delOwner
             // 
-            this.btn_delOwner.Location = new System.Drawing.Point(227, 410);
+            this.btn_delOwner.Location = new System.Drawing.Point(300, 420);
             this.btn_delOwner.Name = "btn_delOwner";
             this.btn_delOwner.Size = new System.Drawing.Size(23, 23);
             this.btn_delOwner.TabIndex = 8;
@@ -158,43 +160,43 @@
             // cob_Owner
             // 
             this.cob_Owner.FormattingEnabled = true;
-            this.cob_Owner.Location = new System.Drawing.Point(55, 410);
+            this.cob_Owner.Location = new System.Drawing.Point(155, 420);
             this.cob_Owner.Name = "cob_Owner";
-            this.cob_Owner.Size = new System.Drawing.Size(140, 23);
+            this.cob_Owner.Size = new System.Drawing.Size(105, 23);
             this.cob_Owner.TabIndex = 9;
             // 
             // btn_addProduct
             // 
-            this.btn_addProduct.Location = new System.Drawing.Point(150, 230);
+            this.btn_addProduct.Location = new System.Drawing.Point(155, 230);
             this.btn_addProduct.Name = "btn_addProduct";
-            this.btn_addProduct.Size = new System.Drawing.Size(45, 25);
+            this.btn_addProduct.Size = new System.Drawing.Size(50, 25);
             this.btn_addProduct.TabIndex = 13;
             this.btn_addProduct.Text = "+";
             this.btn_addProduct.UseVisualStyleBackColor = true;
             // 
             // btn_delProduct
             // 
-            this.btn_delProduct.Location = new System.Drawing.Point(205, 230);
+            this.btn_delProduct.Location = new System.Drawing.Point(210, 230);
             this.btn_delProduct.Name = "btn_delProduct";
-            this.btn_delProduct.Size = new System.Drawing.Size(45, 25);
+            this.btn_delProduct.Size = new System.Drawing.Size(50, 25);
             this.btn_delProduct.TabIndex = 14;
             this.btn_delProduct.Text = "-";
             this.btn_delProduct.UseVisualStyleBackColor = true;
             // 
             // btn_delProductkategory
             // 
-            this.btn_delProductkategory.Location = new System.Drawing.Point(455, 230);
+            this.btn_delProductkategory.Location = new System.Drawing.Point(470, 230);
             this.btn_delProductkategory.Name = "btn_delProductkategory";
-            this.btn_delProductkategory.Size = new System.Drawing.Size(45, 25);
+            this.btn_delProductkategory.Size = new System.Drawing.Size(50, 25);
             this.btn_delProductkategory.TabIndex = 16;
             this.btn_delProductkategory.Text = "-";
             this.btn_delProductkategory.UseVisualStyleBackColor = true;
             // 
             // btn_addProductkategory
             // 
-            this.btn_addProductkategory.Location = new System.Drawing.Point(400, 230);
+            this.btn_addProductkategory.Location = new System.Drawing.Point(415, 230);
             this.btn_addProductkategory.Name = "btn_addProductkategory";
-            this.btn_addProductkategory.Size = new System.Drawing.Size(45, 25);
+            this.btn_addProductkategory.Size = new System.Drawing.Size(50, 25);
             this.btn_addProductkategory.TabIndex = 15;
             this.btn_addProductkategory.Text = "+";
             this.btn_addProductkategory.UseVisualStyleBackColor = true;
@@ -202,18 +204,18 @@
             // 
             // btn_delStorage
             // 
-            this.btn_delStorage.Location = new System.Drawing.Point(705, 230);
+            this.btn_delStorage.Location = new System.Drawing.Point(730, 230);
             this.btn_delStorage.Name = "btn_delStorage";
-            this.btn_delStorage.Size = new System.Drawing.Size(45, 25);
+            this.btn_delStorage.Size = new System.Drawing.Size(50, 25);
             this.btn_delStorage.TabIndex = 18;
             this.btn_delStorage.Text = "-";
             this.btn_delStorage.UseVisualStyleBackColor = true;
             // 
             // btn_addStorage
             // 
-            this.btn_addStorage.Location = new System.Drawing.Point(650, 230);
+            this.btn_addStorage.Location = new System.Drawing.Point(675, 230);
             this.btn_addStorage.Name = "btn_addStorage";
-            this.btn_addStorage.Size = new System.Drawing.Size(45, 25);
+            this.btn_addStorage.Size = new System.Drawing.Size(50, 25);
             this.btn_addStorage.TabIndex = 17;
             this.btn_addStorage.Text = "+";
             this.btn_addStorage.UseVisualStyleBackColor = true;
@@ -222,7 +224,7 @@
             // lbl_addProductName
             // 
             this.lbl_addProductName.AutoSize = true;
-            this.lbl_addProductName.Location = new System.Drawing.Point(10, 275);
+            this.lbl_addProductName.Location = new System.Drawing.Point(10, 273);
             this.lbl_addProductName.Name = "lbl_addProductName";
             this.lbl_addProductName.Size = new System.Drawing.Size(42, 15);
             this.lbl_addProductName.TabIndex = 19;
@@ -232,7 +234,7 @@
             // lbl_addProductPrice
             // 
             this.lbl_addProductPrice.AutoSize = true;
-            this.lbl_addProductPrice.Location = new System.Drawing.Point(10, 300);
+            this.lbl_addProductPrice.Location = new System.Drawing.Point(10, 303);
             this.lbl_addProductPrice.Name = "lbl_addProductPrice";
             this.lbl_addProductPrice.Size = new System.Drawing.Size(36, 15);
             this.lbl_addProductPrice.TabIndex = 20;
@@ -242,7 +244,7 @@
             // lbl_addProductKategory
             // 
             this.lbl_addProductKategory.AutoSize = true;
-            this.lbl_addProductKategory.Location = new System.Drawing.Point(10, 325);
+            this.lbl_addProductKategory.Location = new System.Drawing.Point(10, 363);
             this.lbl_addProductKategory.Name = "lbl_addProductKategory";
             this.lbl_addProductKategory.Size = new System.Drawing.Size(98, 15);
             this.lbl_addProductKategory.TabIndex = 21;
@@ -252,7 +254,7 @@
             // lbl_addProductStorageplace
             // 
             this.lbl_addProductStorageplace.AutoSize = true;
-            this.lbl_addProductStorageplace.Location = new System.Drawing.Point(10, 350);
+            this.lbl_addProductStorageplace.Location = new System.Drawing.Point(10, 393);
             this.lbl_addProductStorageplace.Name = "lbl_addProductStorageplace";
             this.lbl_addProductStorageplace.Size = new System.Drawing.Size(78, 15);
             this.lbl_addProductStorageplace.TabIndex = 22;
@@ -261,45 +263,45 @@
             // 
             // teb_addProductName
             // 
-            this.teb_addProductName.Location = new System.Drawing.Point(150, 272);
+            this.teb_addProductName.Location = new System.Drawing.Point(155, 270);
             this.teb_addProductName.Name = "teb_addProductName";
-            this.teb_addProductName.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductName.Size = new System.Drawing.Size(105, 23);
             this.teb_addProductName.TabIndex = 23;
             // 
             // teb_addProductPrice
             // 
-            this.teb_addProductPrice.Location = new System.Drawing.Point(150, 297);
+            this.teb_addProductPrice.Location = new System.Drawing.Point(155, 300);
             this.teb_addProductPrice.Name = "teb_addProductPrice";
-            this.teb_addProductPrice.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductPrice.Size = new System.Drawing.Size(105, 23);
             this.teb_addProductPrice.TabIndex = 24;
             // 
             // cob_addProductProductkategory
             // 
             this.cob_addProductProductkategory.FormattingEnabled = true;
-            this.cob_addProductProductkategory.Location = new System.Drawing.Point(150, 322);
+            this.cob_addProductProductkategory.Location = new System.Drawing.Point(155, 360);
             this.cob_addProductProductkategory.Name = "cob_addProductProductkategory";
-            this.cob_addProductProductkategory.Size = new System.Drawing.Size(100, 23);
+            this.cob_addProductProductkategory.Size = new System.Drawing.Size(105, 23);
             this.cob_addProductProductkategory.TabIndex = 25;
             // 
             // cob_addProductStorageplace
             // 
             this.cob_addProductStorageplace.FormattingEnabled = true;
-            this.cob_addProductStorageplace.Location = new System.Drawing.Point(150, 347);
+            this.cob_addProductStorageplace.Location = new System.Drawing.Point(155, 390);
             this.cob_addProductStorageplace.Name = "cob_addProductStorageplace";
-            this.cob_addProductStorageplace.Size = new System.Drawing.Size(100, 23);
+            this.cob_addProductStorageplace.Size = new System.Drawing.Size(105, 23);
             this.cob_addProductStorageplace.TabIndex = 26;
             // 
             // teb_addProductkategoryName
             // 
-            this.teb_addProductkategoryName.Location = new System.Drawing.Point(400, 272);
+            this.teb_addProductkategoryName.Location = new System.Drawing.Point(415, 270);
             this.teb_addProductkategoryName.Name = "teb_addProductkategoryName";
-            this.teb_addProductkategoryName.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductkategoryName.Size = new System.Drawing.Size(105, 23);
             this.teb_addProductkategoryName.TabIndex = 28;
             // 
             // lbl_addProductkategoryName
             // 
             this.lbl_addProductkategoryName.AutoSize = true;
-            this.lbl_addProductkategoryName.Location = new System.Drawing.Point(260, 275);
+            this.lbl_addProductkategoryName.Location = new System.Drawing.Point(270, 273);
             this.lbl_addProductkategoryName.Name = "lbl_addProductkategoryName";
             this.lbl_addProductkategoryName.Size = new System.Drawing.Size(42, 15);
             this.lbl_addProductkategoryName.TabIndex = 27;
@@ -309,7 +311,7 @@
             // lbl_addProductkategoryTemperature
             // 
             this.lbl_addProductkategoryTemperature.AutoSize = true;
-            this.lbl_addProductkategoryTemperature.Location = new System.Drawing.Point(260, 300);
+            this.lbl_addProductkategoryTemperature.Location = new System.Drawing.Point(270, 303);
             this.lbl_addProductkategoryTemperature.Name = "lbl_addProductkategoryTemperature";
             this.lbl_addProductkategoryTemperature.Size = new System.Drawing.Size(76, 15);
             this.lbl_addProductkategoryTemperature.TabIndex = 29;
@@ -319,7 +321,7 @@
             // lbl_addStorageTemperature
             // 
             this.lbl_addStorageTemperature.AutoSize = true;
-            this.lbl_addStorageTemperature.Location = new System.Drawing.Point(510, 325);
+            this.lbl_addStorageTemperature.Location = new System.Drawing.Point(530, 333);
             this.lbl_addStorageTemperature.Name = "lbl_addStorageTemperature";
             this.lbl_addStorageTemperature.Size = new System.Drawing.Size(76, 15);
             this.lbl_addStorageTemperature.TabIndex = 33;
@@ -328,15 +330,15 @@
             // 
             // teb_addStorageName
             // 
-            this.teb_addStorageName.Location = new System.Drawing.Point(650, 272);
+            this.teb_addStorageName.Location = new System.Drawing.Point(675, 270);
             this.teb_addStorageName.Name = "teb_addStorageName";
-            this.teb_addStorageName.Size = new System.Drawing.Size(100, 23);
+            this.teb_addStorageName.Size = new System.Drawing.Size(105, 23);
             this.teb_addStorageName.TabIndex = 32;
             // 
             // lbl_addStorageName
             // 
             this.lbl_addStorageName.AutoSize = true;
-            this.lbl_addStorageName.Location = new System.Drawing.Point(510, 275);
+            this.lbl_addStorageName.Location = new System.Drawing.Point(530, 273);
             this.lbl_addStorageName.Name = "lbl_addStorageName";
             this.lbl_addStorageName.Size = new System.Drawing.Size(42, 15);
             this.lbl_addStorageName.TabIndex = 31;
@@ -345,29 +347,29 @@
             // 
             // teb_addProductkategoryTemperature
             // 
-            this.teb_addProductkategoryTemperature.Location = new System.Drawing.Point(400, 297);
+            this.teb_addProductkategoryTemperature.Location = new System.Drawing.Point(415, 300);
             this.teb_addProductkategoryTemperature.Name = "teb_addProductkategoryTemperature";
-            this.teb_addProductkategoryTemperature.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductkategoryTemperature.Size = new System.Drawing.Size(105, 23);
             this.teb_addProductkategoryTemperature.TabIndex = 34;
             // 
             // teb_addStorageTemperature
             // 
-            this.teb_addStorageTemperature.Location = new System.Drawing.Point(650, 322);
+            this.teb_addStorageTemperature.Location = new System.Drawing.Point(675, 330);
             this.teb_addStorageTemperature.Name = "teb_addStorageTemperature";
-            this.teb_addStorageTemperature.Size = new System.Drawing.Size(100, 23);
+            this.teb_addStorageTemperature.Size = new System.Drawing.Size(105, 23);
             this.teb_addStorageTemperature.TabIndex = 35;
             // 
             // teb_addStorageCapacity
             // 
-            this.teb_addStorageCapacity.Location = new System.Drawing.Point(650, 297);
+            this.teb_addStorageCapacity.Location = new System.Drawing.Point(675, 300);
             this.teb_addStorageCapacity.Name = "teb_addStorageCapacity";
-            this.teb_addStorageCapacity.Size = new System.Drawing.Size(100, 23);
+            this.teb_addStorageCapacity.Size = new System.Drawing.Size(105, 23);
             this.teb_addStorageCapacity.TabIndex = 37;
             // 
             // lbl_addStorageCapacity
             // 
             this.lbl_addStorageCapacity.AutoSize = true;
-            this.lbl_addStorageCapacity.Location = new System.Drawing.Point(510, 300);
+            this.lbl_addStorageCapacity.Location = new System.Drawing.Point(530, 303);
             this.lbl_addStorageCapacity.Name = "lbl_addStorageCapacity";
             this.lbl_addStorageCapacity.Size = new System.Drawing.Size(56, 15);
             this.lbl_addStorageCapacity.TabIndex = 36;
@@ -380,50 +382,69 @@
             this.Name,
             this.Capacity,
             this.Temperature});
-            this.liv_Storageplace.Location = new System.Drawing.Point(510, 25);
+            this.liv_Storageplace.Location = new System.Drawing.Point(530, 25);
             this.liv_Storageplace.Name = "liv_Storageplace";
-            this.liv_Storageplace.Size = new System.Drawing.Size(240, 200);
+            this.liv_Storageplace.Size = new System.Drawing.Size(250, 200);
             this.liv_Storageplace.TabIndex = 38;
             this.liv_Storageplace.UseCompatibleStateImageBehavior = false;
             // 
             // liv_Productkategory
             // 
-            this.liv_Productkategory.Location = new System.Drawing.Point(260, 25);
+            this.liv_Productkategory.Location = new System.Drawing.Point(270, 25);
             this.liv_Productkategory.Name = "liv_Productkategory";
-            this.liv_Productkategory.Size = new System.Drawing.Size(240, 200);
+            this.liv_Productkategory.Size = new System.Drawing.Size(250, 200);
             this.liv_Productkategory.TabIndex = 39;
             this.liv_Productkategory.UseCompatibleStateImageBehavior = false;
             // 
             // liv_Product
             // 
-            this.liv_Product.Location = new System.Drawing.Point(10, 24);
+            this.liv_Product.Location = new System.Drawing.Point(10, 25);
             this.liv_Product.Name = "liv_Product";
-            this.liv_Product.Size = new System.Drawing.Size(240, 200);
+            this.liv_Product.Size = new System.Drawing.Size(250, 200);
             this.liv_Product.TabIndex = 40;
             this.liv_Product.UseCompatibleStateImageBehavior = false;
             // 
             // teb_addProductkategoryDurability
             // 
-            this.teb_addProductkategoryDurability.Location = new System.Drawing.Point(400, 322);
+            this.teb_addProductkategoryDurability.Location = new System.Drawing.Point(415, 330);
             this.teb_addProductkategoryDurability.Name = "teb_addProductkategoryDurability";
-            this.teb_addProductkategoryDurability.Size = new System.Drawing.Size(100, 23);
+            this.teb_addProductkategoryDurability.Size = new System.Drawing.Size(105, 23);
             this.teb_addProductkategoryDurability.TabIndex = 42;
             // 
             // lbl_addProductkategoryDurability
             // 
             this.lbl_addProductkategoryDurability.AutoSize = true;
-            this.lbl_addProductkategoryDurability.Location = new System.Drawing.Point(260, 325);
+            this.lbl_addProductkategoryDurability.Location = new System.Drawing.Point(270, 333);
             this.lbl_addProductkategoryDurability.Name = "lbl_addProductkategoryDurability";
             this.lbl_addProductkategoryDurability.Size = new System.Drawing.Size(61, 15);
             this.lbl_addProductkategoryDurability.TabIndex = 41;
             this.lbl_addProductkategoryDurability.Text = "Durability:";
             this.lbl_addProductkategoryDurability.UseWaitCursor = true;
             // 
+            // teb_addProductStoragedate
+            // 
+            this.teb_addProductStoragedate.Location = new System.Drawing.Point(155, 330);
+            this.teb_addProductStoragedate.Name = "teb_addProductStoragedate";
+            this.teb_addProductStoragedate.Size = new System.Drawing.Size(105, 23);
+            this.teb_addProductStoragedate.TabIndex = 43;
+            // 
+            // lbl_addProductStoragedate
+            // 
+            this.lbl_addProductStoragedate.AutoSize = true;
+            this.lbl_addProductStoragedate.Location = new System.Drawing.Point(10, 333);
+            this.lbl_addProductStoragedate.Name = "lbl_addProductStoragedate";
+            this.lbl_addProductStoragedate.Size = new System.Drawing.Size(73, 15);
+            this.lbl_addProductStoragedate.TabIndex = 44;
+            this.lbl_addProductStoragedate.Text = "Storagedate:";
+            this.lbl_addProductStoragedate.UseWaitCursor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 470);
+            this.Controls.Add(this.lbl_addProductStoragedate);
+            this.Controls.Add(this.teb_addProductStoragedate);
             this.Controls.Add(this.teb_addProductkategoryDurability);
             this.Controls.Add(this.lbl_addProductkategoryDurability);
             this.Controls.Add(this.liv_Product);
@@ -514,5 +535,7 @@
         private ColumnHeader Name;
         private ColumnHeader Capacity;
         private ColumnHeader Temperature;
+        private TextBox teb_addProductStoragedate;
+        private Label lbl_addProductStoragedate;
     }
 }

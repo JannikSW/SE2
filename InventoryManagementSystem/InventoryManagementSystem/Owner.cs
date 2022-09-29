@@ -1,15 +1,15 @@
 ﻿namespace InventoryManagementSystem
 {
-    class Owner
+    internal class Owner
     {
-        string name;
+        protected string name;
 
-        public Owner(string name)
+        internal Owner(string name)
         {
             this.name = name;
         }
 
-        public string infoString()
+        internal string infoString()
         {
             return this.name;
         }
