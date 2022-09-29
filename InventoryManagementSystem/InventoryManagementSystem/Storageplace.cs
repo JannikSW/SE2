@@ -1,21 +1,21 @@
 ﻿namespace InventoryManagementSystem
 {
-    class Storageplace
+    internal class Storageplace
     {
-        public string name;
-        protected int capacity;
-        protected Temperature degreeOfCold;
+        protected string name = "";
+        protected int capacity = 0;
+        protected Temperature temperature;
 
-        public Storageplace(string storageName, int storageCapacity, Temperature storageTemperature)
+        internal Storageplace(string nameStorage, int capacityStorage, Temperature temperatureStorage)
         {
-            this.name = storageName;
-            this.capacity = storageCapacity;
-            this.degreeOfCold = storageTemperature;
+            this.name = nameStorage;
+            this.capacity = capacityStorage;
+            this.temperature = temperatureStorage;
         }
 
-        public string infoString()
+        internal string infoString()
         {
-            return this.name + this.capacity.ToString() + this.degreeOfCold.coldnessString();
+            return this.name + "" + this.capacity.ToString() + "" + this.temperature.infoString();
         }
     }
 }

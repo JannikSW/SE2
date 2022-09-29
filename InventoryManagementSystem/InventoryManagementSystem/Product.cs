@@ -2,22 +2,24 @@
 {
     class Product
     {
-        string name;
-        double price;
-        Productkategory productkategory;
-        Temperature temperature;
+        protected string name = "";
+        protected Price price;
+        protected Productkategory productkategory;
+        protected DateTime storageDate;
 
-        public Product(string productname, double productprice, Productkategory productkategory, Temperature storageTemperature)
+        internal Product(string nameProduct, Price prductPrice, Productkategory productkategoryProduct, DateTime storageDateProduct)
         {
-            this.name = productname;
-            this.price = productprice;
-            this.productkategory = productkategory;
-            this.temperature = storageTemperature;
+            this.name = nameProduct;
+            this.price = prductPrice;
+            this.productkategory = productkategoryProduct;
+            this.storageDate = storageDateProduct;
         }
 
-        public string infoString()
+        internal string infoString()
         {
-            return this.name + this.price.ToString() + this.productkategory.infoSmallString() + this.productkategory.infoSmallString();
+            return this.name + " " + this.price.toString() + " " + this.productkategory.infoString() + " " + storageDate.ToString("MM/dd/yyyy");
         }
+
+        
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
+    "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
+    "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
         "projectName": "InventoryManagementSystem",
-        "projectPath": "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\schelja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\schelja\\Desktop\\Abgabe\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\InventoryManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Jannik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\InventoryManagementSystem\\InventoryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\schelja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jannik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,10 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://artifactory.sick.com/artifactory/api/nuget/bu90pa-nuget-local/": {},
-          "https://artifactory.sick.com/artifactory/api/nuget/pems-nuget-local/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {

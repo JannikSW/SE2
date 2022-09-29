@@ -1,45 +1,14 @@
 ﻿namespace InventoryManagementSystem
 {
-    internal class Temperature
+    internal abstract class Temperature
     {
-        protected int minTemperature;
-        protected int maxTemperature;
-        protected string dimension;
+        protected string unit = "";
+        protected int min = 0;
+        protected int max = 0;
 
-        int degree;
-        degreeOfCold coldness;
-
-        public Temperature(int temperature)
+        internal string infoString()
         {
-            this.degree = temperature;
-
-            if (this.degree <= 0)
-            {
-                this.coldness = degreeOfCold.frozen;
-            }
-            if (0 < this.degree && this.degree > 15)
-            {
-                this.coldness = degreeOfCold.chilled;
-            }
-            if (15 <= this.degree)
-            {
-                this.coldness = degreeOfCold.room;
-            }
-        }
-
-        public string coldnessString()
-        {
-            switch (coldness)
-            { 
-                case degreeOfCold.frozen:
-                    return "frozen";
-                case degreeOfCold.chilled:
-                    return "chilled";
-                case degreeOfCold.room:
-                    return "room";
-                default:
-                    return "";
-            }
+            return this.min.ToString() + " - " + this.max.ToString() + " " + this.unit;
         }
     }
 }
