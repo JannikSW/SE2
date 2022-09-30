@@ -13,7 +13,7 @@
 
         override internal string infoString()
         {
-            return this.name + " " + this.storageTemperature.infoString() + " " + this.durability.ToString();
+            return String.Format("{0} {1} {2}", this.name, this.storageTemperature.infoString(), this.durability.ToString());
         }
     }
 }

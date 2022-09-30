@@ -20,7 +20,7 @@
 
         internal string infoString()
         {
-            return this.name + "" + this.capacity.ToString() + "" + this.temperature.infoString();
+            return String.Format("{0} {1} {2}", this.name, this.capacity.ToString(), this.temperature.infoString());
         }
     }
 }

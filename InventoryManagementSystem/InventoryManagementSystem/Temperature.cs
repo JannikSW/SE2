@@ -8,7 +8,7 @@
 
         internal string infoString()
         {
-            return this.min.ToString() + " - " + this.max.ToString() + " " + this.unit;
+            return String.Format("{0} - {1} {2}", this.min.ToString(), this.max.ToString(), this.unit);
         }
     }
 }

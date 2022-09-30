@@ -21,7 +21,7 @@
 
         internal string infoString()
         {
-            return this.name + " " + this.price.toString() + " " + this.productkategory.infoString() + " " + storagedate.ToString("MM/dd/yyyy");
+            return this.name + " " + this.price.infoString() + " " + this.productkategory.infoString() + " " + storagedate.ToString("MM/dd/yyyy");
         }
 
         

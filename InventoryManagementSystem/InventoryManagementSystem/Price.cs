@@ -1,4 +1,7 @@
-﻿namespace InventoryManagementSystem
+﻿using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
+
+namespace InventoryManagementSystem
 {
     internal class Price
     {
@@ -11,9 +14,9 @@
             this.small = smallPrice;
         }
 
-        internal string toString()
+        internal string infoString()
         {
-            return this.big.ToString() + "." + this.small.ToString();
+            return String.Format("{0}.{1}", this.big.ToString(), this.small.ToString());
         }
     }
 }

@@ -11,8 +11,8 @@
         }
 
         virtual internal string infoString()
-        { 
-            return this.name + " " + this.storageTemperature.infoString();
+        {
+            return String.Format("{0} {1}", this.name, this.storageTemperature.infoString());
         }
     }
 }

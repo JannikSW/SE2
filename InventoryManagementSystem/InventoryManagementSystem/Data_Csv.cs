@@ -24,8 +24,7 @@ namespace InventoryManagementSystem
                 switch (temp[0])
                 {
                     case "Product":
-                        //                        Product tempProduct = new Product(temp[1], Price prductPrice, DateTime storagedateProduct, Productkategory productkategoryProduct, Storageplace storageplaceProduct, Owner ownerProduct)
-                        this.stringToPrice(temp[2]);
+                        Product tempProduct = new Product(temp[1], this.stringToPrice(temp[2]), DateTime storagedateProduct, Productkategory productkategoryProduct, Storageplace storageplaceProduct, Owner ownerProduct)
                         break;
                     case "Productkategory":
                         break;
