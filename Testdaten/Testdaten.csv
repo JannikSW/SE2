@@ -4,7 +4,7 @@ Productkategory,Wasser,4 - 25 °C,365
 Productkategory,Saft,4 - 7 °C,20
 Storageplace,Getränkekasten,16,15 - 30 °C
 Storageplace,Kühlschrank,25, 5 - 5 °C
-Storageplace,Gefrierschrank,20, -22 - -20°C
+Storageplace,Gefrierschrank,20, -22 - -20 °C
 Owner,Manuel
 Owner,Jan
 Owner,Jannik

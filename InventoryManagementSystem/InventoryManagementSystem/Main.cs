@@ -105,14 +105,9 @@ namespace InventoryManagementSystem
                     Csv myCsv = new Csv(filePath);
                 }
 
-               // var fileStream = frm_loadFile.OpenFile();
-              //  using (StreamReader reader = new StreamReader(fileStream))
-              //  {
-               //     fileData = reader.ReadToEnd();
-             //   }
-            }
 
-           // Csv myCsv = new Csv(fileData);            
+            }
+            this.UpdateView();
         }
     }
 }

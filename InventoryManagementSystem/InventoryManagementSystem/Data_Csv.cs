@@ -9,6 +9,11 @@ namespace InventoryManagementSystem
         internal Csv(string pathCsv)
         {
             this.path = pathCsv;
+            this.dataProduct = new List<Product>();
+            this.dataProductkategory = new List<Productkategory>();
+            this.dataStorageplace = new List<Storageplace>();
+            this.dataOwner = new List<Owner>();
+
             this.loadData();
         }
 
@@ -24,13 +29,28 @@ namespace InventoryManagementSystem
                 switch (temp[0])
                 {
                     case "Product":
-                        Product tempProduct = new Product(temp[1], this.stringToPrice(temp[2]), DateTime storagedateProduct, Productkategory productkategoryProduct, Storageplace storageplaceProduct, Owner ownerProduct)
+                        Product tempProduct = new Product(temp[1], this.stringToPrice(temp[2]), DateTime.Parse(temp[3]), temp[4], temp[5], temp[6]);
+                        this.dataProduct.Add(tempProduct);
                         break;
                     case "Productkategory":
+                        if (temp.Length >= 4)
+                        {
+                            Productkategory tempPerishable = new Perishable(temp[1], this.stringToTemperature(temp[2]), int.Parse(temp[3]));
+                            this.dataProductkategory.Add(tempPerishable);
+                        }
+                        else
+                        {
+                            Productkategory tempUnperishable = new Unperishable(temp[1], this.stringToTemperature(temp[2]));
+                            this.dataProductkategory.Add(tempUnperishable);
+                        }
                         break;
                     case "Storageplace":
+                        Storageplace tempStorageplace = new Storageplace(temp[1], int.Parse(temp[2]), this.stringToTemperature(temp[3]));
+                        this.dataStorageplace.Add(tempStorageplace);
                         break;
                     case "Owner":
+                        Owner tempOwner = new Owner(temp[1]);
+                        this.dataOwner.Add(tempOwner);
                         break;
                     default:
                         break;
