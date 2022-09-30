@@ -66,7 +66,7 @@ namespace InventoryManagementSystem
 
             foreach (Product tempProduct in this.myProduct)
             {
-                liv_Productkategory.Items.Add(tempProduct.infoString());
+                liv_Product.Items.Add(tempProduct.infoString());
             }
 
             foreach (Productkategory tempProductkategory in this.myProductkategory)
@@ -92,7 +92,7 @@ namespace InventoryManagementSystem
             OpenFileDialog frm_loadFile = new OpenFileDialog();
             string filePath = "";
             
-            frm_loadFile.InitialDirectory = "C:\\";
+            frm_loadFile.InitialDirectory = "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\Testdaten";
             frm_loadFile.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
             frm_loadFile.FilterIndex = 1;
             frm_loadFile.RestoreDirectory = true;
@@ -103,9 +103,11 @@ namespace InventoryManagementSystem
                 if (filePath.EndsWith(".csv"))
                 {
                     Csv myCsv = new Csv(filePath);
+                    this.myProduct = myCsv.dataProduct;
+                    this.myProductkategory= myCsv.dataProductkategory;
+                    this.myStorageplace = myCsv.dataStorageplace;
+                    this.myOwner = myCsv.dataOwner;
                 }
-
-
             }
             this.UpdateView();
         }
