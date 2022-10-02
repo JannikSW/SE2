@@ -5,5 +5,7 @@
         internal void addElement();
 
         internal void deleteElement();
+
+        internal string informationElement();
     }
 }

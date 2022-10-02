@@ -11,5 +11,9 @@
         {
             throw new NotImplementedException();
         }
+        string IManager.informationElement()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

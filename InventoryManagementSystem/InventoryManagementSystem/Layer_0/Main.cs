@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Runtime.CompilerServices;
 using System.Formats.Asn1;
 using System.Text;
+using InventoryManagementSystem.Layer_3;
 
 namespace InventoryManagementSystem
 {
@@ -13,7 +14,7 @@ namespace InventoryManagementSystem
     {
         List<Product> myProduct;
         List<Productkategory> myProductkategory;
-        List<Storageplace> myStorageplace;
+        List<Storage> myStorageplace;
         List<Owner> myOwner;
 
 
@@ -22,7 +23,7 @@ namespace InventoryManagementSystem
             InitializeComponent();
             this.myProduct         = new List<Product>();
             this.myProductkategory = new List<Productkategory>();
-            this.myStorageplace    = new List<Storageplace>();
+            this.myStorageplace    = new List<Storage>();
             this.myOwner           = new List<Owner>();
         }
 
@@ -78,7 +79,7 @@ namespace InventoryManagementSystem
                 cob_addProductProductkategory.Items.Add(tempProductkategory.infoSmallString());
             }
 
-            foreach (Storageplace tempStorageplace in this.myStorageplace)
+            foreach (Storage tempStorageplace in this.myStorageplace)
             {
                 liv_Storageplace.Items.Add(tempStorageplace.infoString());
                 cob_addProductStorageplace.Items.Add(tempStorageplace.infoSmallString());
@@ -144,7 +145,7 @@ namespace InventoryManagementSystem
 
                         csvData = myCsv.saveData();
 
-                        //myStream()
+                        myStream()
 
                     }
                     myStream.Close();

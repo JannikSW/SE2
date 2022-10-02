@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.FileIO;
+﻿using InventoryManagementSystem.Layer_3;
+using Microsoft.VisualBasic.FileIO;
 using System.Linq.Expressions;
 
 namespace InventoryManagementSystem
@@ -11,7 +12,7 @@ namespace InventoryManagementSystem
             this.path = pathCsv;
             this.dataProduct = new List<Product>();
             this.dataProductkategory = new List<Productkategory>();
-            this.dataStorageplace = new List<Storageplace>();
+            this.dataStorageplace = new List<Storage>();
             this.dataOwner = new List<Owner>();
         }
 
@@ -43,7 +44,7 @@ namespace InventoryManagementSystem
                         }
                         break;
                     case "Storageplace":
-                        Storageplace tempStorageplace = new Storageplace(temp[1], int.Parse(temp[2]), this.stringToTemperature(temp[3]));
+                        Storage tempStorageplace = new Storage(temp[1], int.Parse(temp[2]), this.stringToTemperature(temp[3]));
                         this.dataStorageplace.Add(tempStorageplace);
                         break;
                     case "Owner":
@@ -58,10 +59,10 @@ namespace InventoryManagementSystem
 
         internal override string saveData()
         {
-            //this.dataProduct.
-            //this.dataProductkategory.
-            //this.dataStorageplace.
-            //this.dataOwner.
+            this.dataProduct.
+            this.dataProductkategory.
+            this.dataStorageplace.
+            this.dataOwner.
 
             return "";
         }

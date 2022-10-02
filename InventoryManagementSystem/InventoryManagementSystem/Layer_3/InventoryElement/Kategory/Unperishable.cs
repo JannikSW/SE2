@@ -1,11 +1,11 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal class Unperishable : Productkategory
+    internal class Unperishable : Kategory
     {
         internal Unperishable(string nameProductkategory, Temperature storageTemperatureProductkategory)
         {
-            name = nameProductkategory;
-            storageTemperature = storageTemperatureProductkategory;
+            this.name               = nameProductkategory;
+            this.storageTemperature = storageTemperatureProductkategory;
         }
     }
 }

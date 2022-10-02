@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using InventoryManagementSystem.Layer_3;
 
 namespace InventoryManagementSystem
 {
@@ -6,7 +7,7 @@ namespace InventoryManagementSystem
     {
         internal List<Product> dataProduct;
         internal List<Productkategory> dataProductkategory;
-        internal List<Storageplace> dataStorageplace;
+        internal List<Storage> dataStorageplace;
         internal List<Owner> dataOwner;
 
         protected string path = "";

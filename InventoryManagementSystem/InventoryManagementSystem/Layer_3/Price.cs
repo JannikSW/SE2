@@ -1,7 +1,4 @@
-﻿using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Xml.Linq;
-
-namespace InventoryManagementSystem.Layer_3
+﻿namespace InventoryManagementSystem.Layer_3
 {
     internal class Price
     {
