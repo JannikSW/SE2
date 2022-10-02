@@ -1,17 +1,19 @@
-﻿namespace InventoryManagementSystem.Layer_2
+﻿using InventoryManagementSystem.Layer_3;
+
+namespace InventoryManagementSystem.Layer_2
 {
-    internal class StorageplaceManager : IManager
+    internal class StorageManager : IManager
     {
-        void IManager.addElement()
-        {
+        void IManager.addElement(IInventoryElement storageElement)
+        { 
             throw new NotImplementedException();
         }
 
-        void IManager.deleteElement()
+        void IManager.deleteElement(IInventoryElement storageElement)
         {
             throw new NotImplementedException();
         }
-        string IManager.informationElement()
+        string IManager.informationElement(IInventoryElement storageElement)
         {
             throw new NotImplementedException();
         }

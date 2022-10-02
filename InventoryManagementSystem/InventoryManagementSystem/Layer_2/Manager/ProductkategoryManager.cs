@@ -1,13 +1,19 @@
-﻿namespace InventoryManagementSystem.Layer_2
+﻿using InventoryManagementSystem.Layer_3;
+
+namespace InventoryManagementSystem.Layer_2
 {
-    internal class ProductkategoryManager : IManager
+    internal class KategoryManager : IManager
     {
-        void IManager.addElement()
+        void IManager.addElement(IInventoryElement kategoryElement)
         {
             throw new NotImplementedException();
         }
 
-        void IManager.deleteElement()
+        void IManager.deleteElement(IInventoryElement kategoryElement)
+        {
+            throw new NotImplementedException();
+        }
+        string IManager.informationElement(IInventoryElement kategoryElement)
         {
             throw new NotImplementedException();
         }
