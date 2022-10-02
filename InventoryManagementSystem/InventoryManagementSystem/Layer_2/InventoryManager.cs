@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagementSystem.Layer_2
 {
-    internal abstract class Manager
+    internal abstract class InventoryManager
     {
         ProductManager         productManager;
         ProductkategoryManager productkategoryManager;

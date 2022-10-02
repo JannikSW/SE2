@@ -1,13 +1,13 @@
 ﻿namespace InventoryManagementSystem.Layer_2
 {
-    internal class StorageplaceManager : Manager
+    internal class StorageplaceManager : IManager
     {
-        internal override void addElement()
+        void IManager.addElement()
         {
             throw new NotImplementedException();
         }
 
-        internal override void deleteElement()
+        void IManager.deleteElement()
         {
             throw new NotImplementedException();
         }
