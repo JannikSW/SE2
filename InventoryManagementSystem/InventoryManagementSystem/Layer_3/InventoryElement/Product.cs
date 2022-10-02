@@ -6,7 +6,6 @@
         protected Price    price;
         protected DateTime storagedate;
         protected Kategory kategory;
-        protected Storage  storage;
         protected Owner    owner;
 
         internal Product(string nameProduct, Price productPrice, DateTime storagedateProduct, Kategory kategoryProduct, Storage storageProduct, Owner ownerProduct)
@@ -15,7 +14,6 @@
             this.price       = productPrice;
             this.storagedate = storagedateProduct;
             this.kategory    = kategoryProduct;
-            this.storage     = storageProduct;
             this.owner       = ownerProduct;
         }
 

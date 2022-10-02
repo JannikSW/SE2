@@ -8,6 +8,8 @@ namespace InventoryManagementSystem.Layer_2
 
         internal void deleteElement(IInventoryElement element);
 
-        internal string informationElement(IInventoryElement element);
+        internal string infoElement(IInventoryElement element);
+
+        internal string infoShortElement(IInventoryElement element);
     }
 }

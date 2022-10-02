@@ -4,18 +4,31 @@ namespace InventoryManagementSystem.Layer_2
 {
     internal class ProductManager : IManager
     {
+        internal List<IInventoryElement> productInventory;
+
+        internal ProductManager()
+        {
+            this.productInventory = new List<IInventoryElement>();
+        }
+
         void IManager.addElement(IInventoryElement productElement)
         {
-            throw new NotImplementedException();
+            this.productInventory.Add(productElement);
         }
 
         void IManager.deleteElement(IInventoryElement productElement)
         {
-            throw new NotImplementedException();
+            this.productInventory.Remove(productElement);
         }
-        string IManager.informationElement(IInventoryElement productElement)
+
+        string IManager.infoElement(IInventoryElement productElement)
         {
-            throw new NotImplementedException();
+            return string.Format("{0}", productElement.getElementInfo());
+        }
+
+        string IManager.infoShortElement(IInventoryElement productElement)
+        {
+            return string.Format("{0}", productElement.getElementShortInfo());
         }
     }
 }
