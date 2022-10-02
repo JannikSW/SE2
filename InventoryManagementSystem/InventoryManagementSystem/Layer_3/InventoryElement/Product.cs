@@ -19,7 +19,7 @@
 
         string IInventoryElement.getElementInfo()
         {
-            return string.Format("{0} {1} {2} {3} {4} {5}", this.name, this.price.infoString(), this.storagedate.ToString("MM/dd/yyyy"), this.kategory, this.storageplace, this.owner);
+            return string.Format("{0} {1} {2} {3} {4}", this.name, this.price.infoString(), this.storagedate.ToString("MM/dd/yyyy"), this.kategory, this.owner);
         }
 
         string IInventoryElement.getElementShortInfo()

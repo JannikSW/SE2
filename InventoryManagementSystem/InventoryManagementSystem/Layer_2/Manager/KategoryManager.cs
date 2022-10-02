@@ -4,21 +4,22 @@ namespace InventoryManagementSystem.Layer_2
 {
     internal class KategoryManager : IManager
     {
-        internal List<IInventoryElement> kategoryInventory;
+        internal List<Kategory> kategoryInventory;
 
         internal KategoryManager()
         {
-            this.kategoryInventory = new List<IInventoryElement>();
+            this.kategoryInventory = new List<Kategory>();
         }
 
         void IManager.addElement(IInventoryElement kategoryElement)
         {
-            this.kategoryInventory.Add(kategoryElement);
+           // Kategory kategory = new Kategory(kategoryElement);
+           // this.kategoryInventory.Add(kategory);
         }
 
         void IManager.deleteElement(IInventoryElement kategoryElement)
         {
-            this.kategoryInventory.Remove(kategoryElement);
+           // this.kategoryInventory.Remove(kategoryElement);
         }
 
         string IManager.infoElement(IInventoryElement kategoryElement)

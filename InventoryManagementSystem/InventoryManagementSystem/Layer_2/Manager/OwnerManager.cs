@@ -4,21 +4,21 @@ namespace InventoryManagementSystem.Layer_2
 {
     internal class OwnerManager : IManager
     {
-        internal List<IInventoryElement> ownerInventory;
+        internal List<Owner> ownerInventory;
 
         internal OwnerManager()
         {
-            this.ownerInventory = new List<IInventoryElement>();
+            this.ownerInventory = new List<Owner>();
         }
 
         void IManager.addElement(IInventoryElement ownerElement)
         {
-            this.ownerInventory.Add(ownerElement);
+            this.ownerInventory.Add((Owner)ownerElement);
         }
 
         void IManager.deleteElement(IInventoryElement ownerElement)
         {
-            this.ownerInventory.Remove(ownerElement);
+            this.ownerInventory.Remove((Owner)ownerElement);
         }
 
         string IManager.infoElement(IInventoryElement ownerElement)

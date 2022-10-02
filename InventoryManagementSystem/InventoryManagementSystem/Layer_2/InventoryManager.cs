@@ -15,6 +15,6 @@ namespace InventoryManagementSystem.Layer_2
             this.kategoryManager = new KategoryManager();
             this.storageManager  = new StorageManager();
             this.ownerManager    = new OwnerManager();
-        }
+        }        
     }
 }

@@ -68,6 +68,7 @@
             this.lbl_addProductkategoryDurability = new System.Windows.Forms.Label();
             this.teb_addProductStoragedate = new System.Windows.Forms.TextBox();
             this.lbl_addProductStoragedate = new System.Windows.Forms.Label();
+            this.teb_addOwner = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_Load
@@ -131,16 +132,17 @@
             // 
             this.btn_addOwner.Location = new System.Drawing.Point(270, 420);
             this.btn_addOwner.Name = "btn_addOwner";
-            this.btn_addOwner.Size = new System.Drawing.Size(23, 23);
+            this.btn_addOwner.Size = new System.Drawing.Size(50, 23);
             this.btn_addOwner.TabIndex = 7;
             this.btn_addOwner.Text = "+";
             this.btn_addOwner.UseVisualStyleBackColor = true;
+            this.btn_addOwner.Click += new System.EventHandler(this.btn_addOwner_Click);
             // 
             // btn_delOwner
             // 
-            this.btn_delOwner.Location = new System.Drawing.Point(300, 420);
+            this.btn_delOwner.Location = new System.Drawing.Point(325, 420);
             this.btn_delOwner.Name = "btn_delOwner";
-            this.btn_delOwner.Size = new System.Drawing.Size(23, 23);
+            this.btn_delOwner.Size = new System.Drawing.Size(50, 23);
             this.btn_delOwner.TabIndex = 8;
             this.btn_delOwner.Text = "-";
             this.btn_delOwner.UseVisualStyleBackColor = true;
@@ -422,11 +424,19 @@
             this.lbl_addProductStoragedate.Text = "Storagedate:";
             this.lbl_addProductStoragedate.UseWaitCursor = true;
             // 
+            // teb_addOwner
+            // 
+            this.teb_addOwner.Location = new System.Drawing.Point(415, 420);
+            this.teb_addOwner.Name = "teb_addOwner";
+            this.teb_addOwner.Size = new System.Drawing.Size(105, 23);
+            this.teb_addOwner.TabIndex = 45;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 470);
+            this.Controls.Add(this.teb_addOwner);
             this.Controls.Add(this.lbl_addProductStoragedate);
             this.Controls.Add(this.teb_addProductStoragedate);
             this.Controls.Add(this.teb_addProductkategoryDurability);
@@ -515,5 +525,6 @@
         private Label lbl_addProductkategoryDurability;
         private TextBox teb_addProductStoragedate;
         private Label lbl_addProductStoragedate;
+        private TextBox teb_addOwner;
     }
 }
