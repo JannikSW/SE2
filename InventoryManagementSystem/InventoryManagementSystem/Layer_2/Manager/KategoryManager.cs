@@ -4,32 +4,29 @@ namespace InventoryManagementSystem.Layer_2
 {
     internal class KategoryManager : IManager
     {
-        internal List<Kategory> kategoryInventory;
-
         internal KategoryManager()
         {
-            this.kategoryInventory = new List<Kategory>();
+            throw new NotImplementedException();
         }
 
-        void IManager.addElement(IInventoryElement kategoryElement)
+        void IManager.addElement(string[] kategoryElement)
         {
-           // Kategory kategory = new Kategory(kategoryElement);
-           // this.kategoryInventory.Add(kategory);
+            throw new NotImplementedException();
         }
 
-        void IManager.deleteElement(IInventoryElement kategoryElement)
+        void IManager.deleteElement(string[] kategoryElement)
         {
-           // this.kategoryInventory.Remove(kategoryElement);
+            throw new NotImplementedException();
         }
 
-        string IManager.infoElement(IInventoryElement kategoryElement)
+        string IManager.infoElement(string[] kategoryElement)
         {
-            return string.Format("{0}", kategoryElement.getElementInfo());
+            throw new NotImplementedException();
         }
 
-        string IManager.infoShortElement(IInventoryElement kategoryElement)
+        string IManager.infoShortElement(string[] kategoryElement)
         {
-            return string.Format("{0}", kategoryElement.getElementShortInfo());
+            throw new NotImplementedException();
         }
     }
 }

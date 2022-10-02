@@ -119,7 +119,7 @@ namespace InventoryManagementSystem
         {
             string guiOwnerInfo;
             guiOwnerInfo = teb_addOwner.Text;
-
+            converter.addOwner(guiOwnerInfo);
         }
 
         private void UpdateView()

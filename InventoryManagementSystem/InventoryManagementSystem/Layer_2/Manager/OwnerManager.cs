@@ -11,7 +11,7 @@ namespace InventoryManagementSystem.Layer_2
             this.ownerInventory = new List<Owner>();
         }
 
-        void IManager.addElement(IInventoryElement ownerElement)
+        void IManager.addElement(string ownerElement)
         {
             this.ownerInventory.Add((Owner)ownerElement);
         }

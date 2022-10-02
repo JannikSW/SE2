@@ -2,17 +2,12 @@
 {
     internal class CsvConverter : IConverter
     {
-        void IConverter.addKategory()
-        {
-            throw new NotImplementedException();
-        }
-
-        void IConverter.addOwner()
-        {
-            throw new NotImplementedException();
-        }
-
         void IConverter.addProduct()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IConverter.addKategory()
         {
             throw new NotImplementedException();
         }
@@ -21,5 +16,10 @@
         {
             throw new NotImplementedException();
         }
+        void IConverter.addOwner()
+        {
+            throw new NotImplementedException();
+        }
+    }
     }
 }

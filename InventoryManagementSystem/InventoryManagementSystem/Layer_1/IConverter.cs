@@ -10,6 +10,6 @@ namespace InventoryManagementSystem.Layer_1
 
         internal void addStorage();
 
-        internal void addOwner();
+        internal void addOwner(string ownerInformation);
     }
 }
