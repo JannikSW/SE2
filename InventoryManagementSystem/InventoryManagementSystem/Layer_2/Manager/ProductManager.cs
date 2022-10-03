@@ -4,7 +4,14 @@ namespace InventoryManagementSystem.Layer_2
 {
     internal class ProductManager : IManager
     {
+        List<Product> productList;
+
         internal ProductManager()
+        {
+            this.productList = new List<Product>();
+        }
+
+        void IManager.executeOrder(string order, string[] element)
         {
             throw new NotImplementedException();
         }

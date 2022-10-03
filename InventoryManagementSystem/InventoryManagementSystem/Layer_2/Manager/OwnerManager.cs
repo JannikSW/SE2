@@ -4,31 +4,37 @@ namespace InventoryManagementSystem.Layer_2
 {
     internal class OwnerManager : IManager
     {
-        internal List<Owner> ownerInventory;
+        List<Owner> ownerList;
 
         internal OwnerManager()
         {
-            this.ownerInventory = new List<Owner>();
+            this.ownerList = new List<Owner>();
         }
 
-        void IManager.addElement(string ownerElement)
+        void IManager.executeOrder(string order, string[] element)
         {
-            this.ownerInventory.Add((Owner)ownerElement);
+            throw new NotImplementedException();
         }
 
-        void IManager.deleteElement(IInventoryElement ownerElement)
+        void IManager.addElement(string[] ownerElement)
         {
-            this.ownerInventory.Remove((Owner)ownerElement);
+            Owner owner = new Owner(ownerElement[2]);
+            ownerList.Add(owner);
         }
 
-        string IManager.infoElement(IInventoryElement ownerElement)
+        void IManager.deleteElement(string[] ownerElement)
         {
-            return string.Format("{0}", ownerElement.getElementInfo());
+            throw new NotImplementedException();
         }
 
-        string IManager.infoShortElement(IInventoryElement ownerElement)
+        string IManager.infoElement(string[] ownerElement)
         {
-            return string.Format("{0}", ownerElement.getElementShortInfo());
+            throw new NotImplementedException();
+        }
+
+        string IManager.infoShortElement(string[] ownerElement)
+        {
+            throw new NotImplementedException();
         }
     }
 }

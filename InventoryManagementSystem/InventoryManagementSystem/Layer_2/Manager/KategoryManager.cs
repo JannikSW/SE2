@@ -2,9 +2,16 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    internal class KategoryManager : IManager
+    internal class KategoryManager: IManager
     {
+        List<Kategory> kategoryList;
+
         internal KategoryManager()
+        {
+            this.kategoryList = new List<Kategory>();
+        }
+
+        void IManager.executeOrder(string order, string[] element)
         {
             throw new NotImplementedException();
         }

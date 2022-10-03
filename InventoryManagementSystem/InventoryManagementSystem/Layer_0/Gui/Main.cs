@@ -4,52 +4,94 @@ namespace InventoryManagementSystem
 {
     public partial class Main : Form
     {
-        GuiConverter converter;
+        IConverter converter;
 
         public Main()
         {
             InitializeComponent();
 
             converter = new GuiConverter();
-            //            this.myProduct         = new List<Product>();
-            //            this.myProductkategory = new List<Productkategory>();
-            //            this.myStorageplace    = new List<Storage>();
-            //            this.myOwner           = new List<Owner>();
         }
 
         private void btn_addProduct_Click(object sender, EventArgs e)
         {
-            //string productName                     = teb_addProductName.Text;
-            //double productPrice                    = double.Parse(teb_addProductPrice.Text);
-            //Productkategory productProductkategory = teb_addProductProductkategory.Text;
-            //Storageplace productStorageplace       = teb_addProductStorageplace.Text;
+            string guiInfo;
 
-            //this.myProductkategory.Add(new Product(productName, productPrice, productProductkategory, productStorageplace));
-            //this.UpdateView();
+            guiInfo = teb_addProductName.Text;
+            guiInfo = guiInfo + ";" + teb_addProductPrice.Text;
+            guiInfo = guiInfo + ";" + teb_addProductStoragedate.Text;
+            guiInfo = guiInfo + ";" + cob_addProductKategory.Text;
+            guiInfo = guiInfo + ";" + cob_addProductStorage.Text;
+            guiInfo = guiInfo + ";" + cob_Owner.Text;
 
+            converter.pareseInfo("Gui", "Product", "Add", guiInfo);
         }
 
-        private void btn_addProductkategory_Click(object sender, EventArgs e)
+        private void btn_delProduct_Click(object sender, EventArgs e)
         {
-            //string kategory;
+            string guiInfo;
 
+            guiInfo = teb_addProductName.Text;
 
-            //string productkategoryName = teb_addProductkategoryName.Text;
-            //Temperature productkategoryTemperature = new Temperature(int.Parse(teb_addProductkategoryTemperature.Text));
-            //int productkategoryDurability = int.Parse(teb_addProductkategoryDurability.Text);
-
-            //this.myProductkategory.Add(new Productkategory(productkategoryName, productkategoryTemperature, productkategoryDurability));
-            //this.UpdateView();
+            converter.pareseInfo("Gui", "Product", "Del", guiInfo);
         }
 
-        private void btn_addStorageplace_Click(object sender, EventArgs e)
+        private void btn_addKategory_Click(object sender, EventArgs e)
         {
-            //string storageName = teb_addStorageName.Text;
-            //int storageCapacity = int.Parse(teb_addStorageCapacity.Text);
-            //Temperature storageTemperature = new Temperature(int.Parse(teb_addStorageTemperature.Text));
+            string guiInfo;
 
-            //this.myStorageplace.Add(new Storageplace(storageName, storageCapacity, storageTemperature));
-            //this.UpdateView();
+            guiInfo = teb_addKategoryName.Text;
+            guiInfo = guiInfo + ";" + teb_addKategoryTemperature.Text;
+            guiInfo = guiInfo + ";" + teb_addKategoryDurability.Text;
+
+            converter.pareseInfo("Gui", "Kategory", "Add", guiInfo);
+        }
+
+        private void btn_delKategory_Click(object sender, EventArgs e)
+        {
+            string guiInfo;
+
+            guiInfo = teb_addKategoryName.Text;
+
+            converter.pareseInfo("Gui", "Kategory", "Del", guiInfo);
+        }
+
+        private void btn_addStorage_Click(object sender, EventArgs e)
+        {
+            string guiInfo;
+
+            guiInfo = teb_addStorageName.Text;
+            guiInfo = guiInfo + ";" + teb_addStorageCapacity.Text;
+            guiInfo = guiInfo + ";" + teb_addStorageTemperature.Text;
+
+            converter.pareseInfo("Gui", "Storage", "Add", guiInfo);
+        }
+
+        private void btn_delStorage_Click(object sender, EventArgs e)
+        {
+            string guiInfo;
+
+            guiInfo = teb_addStorageName.Text;
+
+            converter.pareseInfo("Gui", "Storage", "Del", guiInfo);
+        }
+
+        private void btn_addOwner_Click(object sender, EventArgs e)
+        {
+            string guiInfo;
+
+            guiInfo = cob_Owner.Text;
+
+            converter.pareseInfo("Gui", "Owner", "Add", guiInfo);
+        }
+
+        private void btn_delOwner_Click(object sender, EventArgs e)
+        {
+            string guiInfo;
+
+            guiInfo = cob_Owner.Text;
+
+            converter.pareseInfo("Gui", "Owner", "Del", guiInfo);
         }
 
         private void btn_Load_Click(object sender, EventArgs e)
@@ -115,23 +157,15 @@ namespace InventoryManagementSystem
             //this.UpdateView();
         }
 
-        private void btn_addOwner_Click(object sender, EventArgs e)
-        {
-            string guiOwnerInfo;
-            guiOwnerInfo = teb_addOwner.Text;
-            converter.addOwner(guiOwnerInfo);
-        }
 
         private void UpdateView()
         {
-
-
-            //liv_Product.Items.Clear();
-            //liv_Productkategory.Items.Clear();
-            //liv_Storageplace.Items.Clear();
-            //cob_addProductProductkategory.Items.Clear();
-            //cob_addProductStorageplace.Items.Clear();
-            //cob_Owner.Items.Clear();
+            liv_Product.Items.Clear();
+            liv_Kategory.Items.Clear();
+            liv_Storage.Items.Clear();
+            cob_addProductKategory.Items.Clear();
+            cob_addProductStorage.Items.Clear();
+            cob_Owner.Items.Clear();
 
             //            foreach (Product tempProduct in this.myProduct)
             //            {
@@ -155,5 +189,7 @@ namespace InventoryManagementSystem
             //                cob_Owner.Items.Add(tempOwner.infoString());
             //            }
         }
+
+
     }
 }
