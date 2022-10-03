@@ -11,27 +11,22 @@ namespace InventoryManagementSystem.Layer_2
             this.kategoryList = new List<Kategory>();
         }
 
-        void IManager.executeOrder(string order, string[] element)
-        {
-            throw new NotImplementedException();
-        }
-
         void IManager.addElement(string[] kategoryElement)
         {
             throw new NotImplementedException();
         }
 
-        void IManager.deleteElement(string[] kategoryElement)
+        void IManager.deleteElement(string kategoryName)
         {
             throw new NotImplementedException();
         }
 
-        string IManager.infoElement(string[] kategoryElement)
+        string[] IManager.infoElement()
         {
             throw new NotImplementedException();
         }
 
-        string IManager.infoShortElement(string[] kategoryElement)
+        string[] IManager.infoShortElement()
         {
             throw new NotImplementedException();
         }

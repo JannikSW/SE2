@@ -21,6 +21,15 @@ namespace InventoryManagementSystem.Layer_1
             this.inventoryManager.execute(elementName, elementAction, formatInfo);
         }
 
+        internal string[] formatInfo(string elementSource, string elementName, string elementLength)
+        {
+            IFormatter formatter;
+
+            formatter = this.selectFormatter(elementSource);
+
+            return this.inventoryManager.request(formatter.formatrequest(elementName, elementLength));
+        }
+
         private IFormatter selectFormatter(string elementSource)
         {
             if (elementSource == "Gui")

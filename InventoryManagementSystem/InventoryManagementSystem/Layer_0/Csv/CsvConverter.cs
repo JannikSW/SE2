@@ -4,12 +4,19 @@ namespace InventoryManagementSystem
 {
     class CsvConverter : IConverter
     {
-        void IConverter.newInventory()
+        Formatter formatter;
+
+        internal CsvConverter()
+        {
+            this.formatter = new Formatter();
+        }
+
+        void IConverter.parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo)
         {
             throw new NotImplementedException();
         }
 
-        void IConverter.pareseInfo(string elementName, string elemenAction, string elementInfo)
+        string[] IConverter.getInfo(string elementSource, string elementName, string elementLength)
         {
             throw new NotImplementedException();
         }

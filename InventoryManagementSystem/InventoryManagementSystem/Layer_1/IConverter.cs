@@ -2,6 +2,8 @@
 {
     internal interface IConverter
     {
-        internal void pareseInfo(string elementSource, string elementName, string elemenAction, string elementInfo);
+        internal void parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo);
+
+        internal string[] getInfo(string elementSource, string elementName, string elementLength);
     }
 }

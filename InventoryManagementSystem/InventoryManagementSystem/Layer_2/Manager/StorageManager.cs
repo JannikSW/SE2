@@ -11,27 +11,22 @@ namespace InventoryManagementSystem.Layer_2
             this.storageList = new List<Storage>();
         }
 
-        void IManager.executeOrder(string order, string[] element)
-        {
-            throw new NotImplementedException();
-        }
-
         void IManager.addElement(string[] storageElement)
         {
             throw new NotImplementedException();
         }
 
-        void IManager.deleteElement(string[] storageElement)
+        void IManager.deleteElement(string storageName)
         {
             throw new NotImplementedException();
         }
 
-        string IManager.infoElement(string[] storageElement)
+        string[] IManager.infoElement()
         {
             throw new NotImplementedException();
         }
 
-        string IManager.infoShortElement(string[] storageElement)
+        string[] IManager.infoShortElement()
         {
             throw new NotImplementedException();
         }

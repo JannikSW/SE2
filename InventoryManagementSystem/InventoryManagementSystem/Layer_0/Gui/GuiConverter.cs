@@ -11,9 +11,14 @@ namespace InventoryManagementSystem
             this.formatter = new Formatter();
         }
 
-        void IConverter.pareseInfo(string elementSource, string elementName, string elemenAction, string elementInfo)
+        void IConverter.parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo)
         {
             this.formatter.formatOrder(elementSource, elementName, elemenAction, elementInfo);
+        }
+
+        string[] IConverter.getInfo(string elementSource, string elementName, string elementLength)
+        {
+            return this.formatter.formatInfo(elementSource, elementName, elementLength);
         }
     }
 }

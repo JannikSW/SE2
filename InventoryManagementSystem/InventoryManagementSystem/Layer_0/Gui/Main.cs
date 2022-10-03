@@ -1,4 +1,5 @@
 using InventoryManagementSystem.Layer_1;
+using InventoryManagementSystem.Layer_3;
 
 namespace InventoryManagementSystem
 {
@@ -11,6 +12,8 @@ namespace InventoryManagementSystem
             InitializeComponent();
 
             converter = new GuiConverter();
+
+            UpdateView();
         }
 
         private void btn_addProduct_Click(object sender, EventArgs e)
@@ -24,7 +27,8 @@ namespace InventoryManagementSystem
             guiInfo = guiInfo + ";" + cob_addProductStorage.Text;
             guiInfo = guiInfo + ";" + cob_Owner.Text;
 
-            converter.pareseInfo("Gui", "Product", "Add", guiInfo);
+            converter.parseInfo("Gui", "Product", "Add", guiInfo);
+            UpdateView();
         }
 
         private void btn_delProduct_Click(object sender, EventArgs e)
@@ -33,7 +37,8 @@ namespace InventoryManagementSystem
 
             guiInfo = teb_addProductName.Text;
 
-            converter.pareseInfo("Gui", "Product", "Del", guiInfo);
+            converter.parseInfo("Gui", "Product", "Del", guiInfo);
+            UpdateView();
         }
 
         private void btn_addKategory_Click(object sender, EventArgs e)
@@ -44,7 +49,8 @@ namespace InventoryManagementSystem
             guiInfo = guiInfo + ";" + teb_addKategoryTemperature.Text;
             guiInfo = guiInfo + ";" + teb_addKategoryDurability.Text;
 
-            converter.pareseInfo("Gui", "Kategory", "Add", guiInfo);
+            converter.parseInfo("Gui", "Kategory", "Add", guiInfo);
+            UpdateView();
         }
 
         private void btn_delKategory_Click(object sender, EventArgs e)
@@ -53,7 +59,8 @@ namespace InventoryManagementSystem
 
             guiInfo = teb_addKategoryName.Text;
 
-            converter.pareseInfo("Gui", "Kategory", "Del", guiInfo);
+            converter.parseInfo("Gui", "Kategory", "Del", guiInfo);
+            UpdateView();
         }
 
         private void btn_addStorage_Click(object sender, EventArgs e)
@@ -64,7 +71,8 @@ namespace InventoryManagementSystem
             guiInfo = guiInfo + ";" + teb_addStorageCapacity.Text;
             guiInfo = guiInfo + ";" + teb_addStorageTemperature.Text;
 
-            converter.pareseInfo("Gui", "Storage", "Add", guiInfo);
+            converter.parseInfo("Gui", "Storage", "Add", guiInfo);
+            UpdateView();
         }
 
         private void btn_delStorage_Click(object sender, EventArgs e)
@@ -73,16 +81,18 @@ namespace InventoryManagementSystem
 
             guiInfo = teb_addStorageName.Text;
 
-            converter.pareseInfo("Gui", "Storage", "Del", guiInfo);
+            converter.parseInfo("Gui", "Storage", "Del", guiInfo);
+            UpdateView();
         }
 
         private void btn_addOwner_Click(object sender, EventArgs e)
         {
             string guiInfo;
 
-            guiInfo = cob_Owner.Text;
+            guiInfo = teb_addOwner.Text;
 
-            converter.pareseInfo("Gui", "Owner", "Add", guiInfo);
+            converter.parseInfo("Gui", "Owner", "Add", guiInfo);
+            UpdateView();
         }
 
         private void btn_delOwner_Click(object sender, EventArgs e)
@@ -91,7 +101,8 @@ namespace InventoryManagementSystem
 
             guiInfo = cob_Owner.Text;
 
-            converter.pareseInfo("Gui", "Owner", "Del", guiInfo);
+            converter.parseInfo("Gui", "Owner", "Del", guiInfo);
+            UpdateView();
         }
 
         private void btn_Load_Click(object sender, EventArgs e)
@@ -160,12 +171,21 @@ namespace InventoryManagementSystem
 
         private void UpdateView()
         {
+            string[] elementInformation;
+
             liv_Product.Items.Clear();
             liv_Kategory.Items.Clear();
             liv_Storage.Items.Clear();
             cob_addProductKategory.Items.Clear();
             cob_addProductStorage.Items.Clear();
             cob_Owner.Items.Clear();
+
+            elementInformation = converter.getInfo("Gui","Owner","Short");
+            foreach (string information in elementInformation)
+            {
+                cob_Owner.Items.Add(information);
+            }
+
 
             //            foreach (Product tempProduct in this.myProduct)
             //            {
