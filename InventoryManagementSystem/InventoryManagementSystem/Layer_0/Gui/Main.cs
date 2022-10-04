@@ -68,7 +68,6 @@ namespace InventoryManagementSystem
             string guiInfo;
 
             guiInfo = teb_addStorageName.Text;
-            guiInfo = guiInfo + ";" + teb_addStorageCapacity.Text;
             guiInfo = guiInfo + ";" + teb_addStorageTemperature.Text;
 
             converter.parseInfo("Gui", "Storage", "Add", guiInfo);
@@ -180,7 +179,19 @@ namespace InventoryManagementSystem
             cob_addProductStorage.Items.Clear();
             cob_Owner.Items.Clear();
 
-            elementInformation = converter.getInfo("Gui","Owner","Short");
+            elementInformation = converter.getInfo("Gui", "Kategory", "True");
+            foreach (string information in elementInformation)
+            {
+                liv_Kategory.Items.Add(information);
+            }
+
+            elementInformation = converter.getInfo("Gui", "Kategory", "False");
+            foreach (string information in elementInformation)
+            {
+                cob_addProductKategory.Items.Add(information);
+            }
+
+            elementInformation = converter.getInfo("Gui","Owner","False");
             foreach (string information in elementInformation)
             {
                 cob_Owner.Items.Add(information);

@@ -3,23 +3,17 @@
     internal class Storage : IInventoryElement
     {
         protected string name;
-        protected int capacity;
         protected Temperature temperature;
 
-        protected Product[] products;
-
-        internal Storage(string nameStorage, int capacityStorage, Temperature temperatureStorage)
+        internal Storage(string nameStorage, Temperature temperatureStorage)
         {
             this.name        = nameStorage;
-            this.capacity    = capacityStorage;
             this.temperature = temperatureStorage;
-
-            this.products    = new Product[capacityStorage];
         }
 
         string IInventoryElement.getElementInfo()
         {
-            return string.Format("{0} {1} {2}", this.name, this.capacity.ToString(), this.temperature.infoString());
+            return string.Format("{0} {1}", this.name, this.temperature.infoString());
         }
 
         string IInventoryElement.getElementShortInfo()

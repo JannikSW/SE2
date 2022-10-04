@@ -11,12 +11,23 @@ namespace InventoryManagementSystem.Layer_2
         IManager storageManager;
         IManager ownerManager;
 
+        List<IInventoryElement> productList;
+        List<IInventoryElement> kategoryList;
+        List<IInventoryElement> storageList;
+        List<IInventoryElement> ownerList;
+
         internal InventoryManager()
         {
-            this.productManager  = new ProductManager();
-            this.kategoryManager = new KategoryManager();
-            this.storageManager  = new StorageManager();
-            this.ownerManager    = new OwnerManager();
+            this.productList  = new List<IInventoryElement>();
+            this.kategoryList = new List<IInventoryElement>();
+            this.storageList  = new List<IInventoryElement>();
+            this.ownerList    = new List<IInventoryElement>();
+
+            this.productManager  = new ProductManager(this.productList, this.kategoryList, this.storageList, this.ownerList);
+            this.kategoryManager = new KategoryManager(this.kategoryList);
+            this.storageManager  = new StorageManager(this.storageList);
+            this.ownerManager    = new OwnerManager(this.ownerList);
+
         }
 
         internal void execute(string elementName, string elementOrder, string[] elementInfo)

@@ -6,15 +6,15 @@ namespace InventoryManagementSystem.Layer_2
     {
         List<IInventoryElement> ownerList;
 
-        internal OwnerManager()
+        internal OwnerManager(List<IInventoryElement> ownerList)
         {
-            this.ownerList = new List<IInventoryElement>();
+            this.ownerList = ownerList;
         }
 
         void IManager.addElement(string[] ownerElement)
         {
             IInventoryElement owner = new Owner(ownerElement[0]);
-            ownerList.Add(owner);
+            this.ownerList.Add(owner);
         }
 
         void IManager.deleteElement(string ownerName)

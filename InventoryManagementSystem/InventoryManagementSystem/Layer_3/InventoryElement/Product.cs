@@ -5,21 +5,23 @@
         protected string   name;
         protected Price    price;
         protected DateTime storagedate;
-        protected Kategory kategory;
-        protected Owner    owner;
+        protected IInventoryElement kategory;
+        protected IInventoryElement storage;
+        protected IInventoryElement owner;
 
-        internal Product(string nameProduct, Price productPrice, DateTime storagedateProduct, Kategory kategoryProduct, Storage storageProduct, Owner ownerProduct)
+        internal Product(string nameProduct, Price productPrice, DateTime storagedateProduct, IInventoryElement kategoryProduct, IInventoryElement storageProduct, IInventoryElement ownerProduct)
         {
             this.name        = nameProduct;
             this.price       = productPrice;
             this.storagedate = storagedateProduct;
             this.kategory    = kategoryProduct;
+            this.storage     = storageProduct;
             this.owner       = ownerProduct;
         }
 
         string IInventoryElement.getElementInfo()
         {
-            return string.Format("{0} {1} {2} {3} {4}", this.name, this.price.infoString(), this.storagedate.ToString("MM/dd/yyyy"), this.kategory, this.owner);
+            return string.Format("{0} {1} {2} {3} {4} {5}", this.name, this.price.infoString(), this.storagedate.ToString("MM/dd/yyyy"), this.kategory.getElementShortInfo(), this.storage.getElementShortInfo(), this.owner.getElementShortInfo());
         }
 
         string IInventoryElement.getElementShortInfo()

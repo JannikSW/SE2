@@ -1,10 +1,17 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal abstract class Temperature
+    internal class Temperature
     {
-        protected string unit = "";
-        protected int min = 0;
-        protected int max = 0;
+        protected string unit;
+        protected int min;
+        protected int max;
+
+        internal Temperature(string unitTemperature, int minTemperature, int maxTemperature)
+        {
+            this.unit = unitTemperature;
+            this.min = minTemperature;
+            this.max = maxTemperature;
+        }
 
         internal string infoString()
         {
