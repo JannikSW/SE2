@@ -89,7 +89,6 @@ namespace InventoryManagementSystem.Layer_2
             return emptyResult;
         }
 
-
         private void executeOrder(string elementName, string elementOrder, string[] elementInfo)
         {
             if (elementName == "Product")

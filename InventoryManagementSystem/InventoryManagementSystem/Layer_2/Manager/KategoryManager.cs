@@ -16,7 +16,7 @@ namespace InventoryManagementSystem.Layer_2
             IInventoryElement kategory;
             Temperature kategoryTemperature;
 
-            kategoryTemperature = this.stringToTemperature(kategoryElement[1]);  
+            kategoryTemperature = new Temperature(kategoryElement[1]);  
 
             if (kategoryElement.Length == 3)
             {
@@ -65,21 +65,6 @@ namespace InventoryManagementSystem.Layer_2
                 result[i] = kategory.getElementShortInfo();
                 i++;
             }
-            return result;
-        }
-
-        private Temperature stringToTemperature(string input)
-        {
-            Temperature result;
-
-            int indexOfMinus = input.IndexOf(" - ");
-            int indexOfLastSpace = input.IndexOf(' ', indexOfMinus + 3);
-            int minTemperature = int.Parse(input.Substring(0, indexOfMinus));
-            int maxTemperature = int.Parse(input.Substring(indexOfMinus + 3, indexOfLastSpace - indexOfMinus - 3));
-            string unitTemperature = input.Substring(indexOfLastSpace + 1, input.Length - 1 - indexOfLastSpace);
-
-            result = new Temperature(unitTemperature, minTemperature, maxTemperature);
-
             return result;
         }
     }

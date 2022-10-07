@@ -2,7 +2,7 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    internal class OwnerManager : IManager
+    class OwnerManager : IManager
     {
         List<IInventoryElement> ownerList;
 

@@ -5,10 +5,14 @@
         protected int big;
         protected int small;
 
-        internal Price(int bigPrice, int smallPrice)
+        internal Price(string priceString)
         {
-            big = bigPrice;
-            small = smallPrice;
+            int indexOfPoint = priceString.IndexOf('.');
+            string bigPrice = priceString.Substring(0, indexOfPoint);
+            string smallPrice = priceString.Substring(indexOfPoint + 1, 2);
+
+            this.big = int.Parse(bigPrice);
+            this.small = int.Parse(smallPrice);
         }
 
         internal string infoString()

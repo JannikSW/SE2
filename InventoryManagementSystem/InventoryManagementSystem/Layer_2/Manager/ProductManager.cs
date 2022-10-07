@@ -2,7 +2,7 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    internal class ProductManager : IManager
+    class ProductManager : IManager
     {
         List<IInventoryElement> productList;
         List<IInventoryElement> kategoryList;
@@ -26,7 +26,7 @@ namespace InventoryManagementSystem.Layer_2
             Price productPrice;
             DateTime productDate;
 
-            productPrice = this.stringToPrice(productElement[1]);
+            productPrice = new Price(productElement[1]);
             productDate = DateTime.Parse(productElement[2]);
 
             foreach (IInventoryElement tempKategory in this.kategoryList)
@@ -55,8 +55,6 @@ namespace InventoryManagementSystem.Layer_2
                     break;
                 }
             }
-
-
 
             product = new Product(productElement[0], productPrice, productDate, kategory, storage, owner);
             this.productList.Add(product);
@@ -98,18 +96,6 @@ namespace InventoryManagementSystem.Layer_2
                     i++;
                 }
                 return result;
-        }
-
-        private Price stringToPrice(string input)
-        {
-            Price result;
-            
-            int indexOfPoint = input.IndexOf('.');
-            string bigPrice = input.Substring(0, indexOfPoint);
-            string smallPrice =  input.Substring(indexOfPoint + 1, 2);
-            result = new Price(int.Parse(bigPrice), int.Parse(smallPrice));
-
-            return result;
         }
     }
 }
