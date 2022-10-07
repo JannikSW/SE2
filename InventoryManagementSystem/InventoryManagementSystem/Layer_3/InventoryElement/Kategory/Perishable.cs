@@ -1,10 +1,10 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal class Perishable : Kategory
+    public class Perishable : Kategory
     {
         private int durability;
 
-        internal Perishable(string nameProductkategory, Temperature storageTemperatureProductkategory, int durabilityProductkategory)
+        public Perishable(string nameProductkategory, Temperature storageTemperatureProductkategory, int durabilityProductkategory)
         {
             this.name               = nameProductkategory;
             this.storageTemperature = storageTemperatureProductkategory;

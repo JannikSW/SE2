@@ -1,12 +1,12 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal class Temperature
+    public class Temperature
     {
         protected string unit;
         protected int min;
         protected int max;
 
-        internal Temperature(string temperatureString)
+        public Temperature(string temperatureString)
         {
             try
             {
@@ -32,7 +32,7 @@
             }
         }
 
-        internal string infoString()
+        public string infoString()
         {
             return string.Format("{0} - {1} {2}", min.ToString(), max.ToString(), unit);
         }

@@ -2,11 +2,11 @@
 
 namespace InventoryManagementSystem
 {
-    class CsvConverter : IConverter
+    public class CsvConverter : IConverter
     {
         Formatter formatter;
 
-        internal CsvConverter()
+        public CsvConverter()
         {
             this.formatter = new Formatter();
         }

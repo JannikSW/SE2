@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    abstract internal class Kategory : IInventoryElement
+    abstract public class Kategory : IInventoryElement
     {
         protected string name;
         protected Temperature storageTemperature;

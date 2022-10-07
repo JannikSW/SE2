@@ -3,7 +3,7 @@
 namespace InventoryManagementSystem.Layer_3
 {
     [Serializable]
-    internal class PriceException : Exception
+    public class PriceException : Exception
     {
         public PriceException()
         {

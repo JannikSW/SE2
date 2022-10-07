@@ -2,11 +2,11 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    class OwnerManager : IManager
+    public class OwnerManager : IManager
     {
         List<IInventoryElement> ownerList;
 
-        internal OwnerManager(List<IInventoryElement> ownerList)
+        public OwnerManager(List<IInventoryElement> ownerList)
         {
             this.ownerList = ownerList;
         }

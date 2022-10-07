@@ -1,15 +1,15 @@
 ﻿namespace InventoryManagementSystem.Layer_2
 {
-    internal interface IFormatter
+    public interface IFormatter
     {
-        internal record elementInfo
+        public record elementInfo
         {
             internal string name;
             internal bool length;
         }
 
-        internal string[] formatInput(string input);
+        public string[] formatInput(string input);
 
-        internal elementInfo formatrequest(string elementName, string elementLenght);
+        public elementInfo formatrequest(string elementName, string elementLenght);
     }
 }

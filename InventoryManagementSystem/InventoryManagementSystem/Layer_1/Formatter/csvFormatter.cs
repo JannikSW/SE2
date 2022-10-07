@@ -4,7 +4,7 @@ using System.Configuration;
 
 namespace InventoryManagementSystem.Layer_1
 {
-    internal class csvFormatter : IFormatter
+    public class csvFormatter : IFormatter
     {
         string[] IFormatter.formatInput(string csvInput)
         {

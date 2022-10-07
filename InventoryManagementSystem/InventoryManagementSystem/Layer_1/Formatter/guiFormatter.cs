@@ -2,7 +2,7 @@
 
 namespace InventoryManagementSystem.Layer_1
 {
-    internal class guiFormatter : IFormatter
+    public class guiFormatter : IFormatter
     {
         string[] IFormatter.formatInput(string guiInput)
         {

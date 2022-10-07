@@ -1,11 +1,11 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal class Storage : IInventoryElement
+    public class Storage : IInventoryElement
     {
         protected string name;
         protected Temperature temperature;
 
-        internal Storage(string nameStorage, Temperature temperatureStorage)
+        public Storage(string nameStorage, Temperature temperatureStorage)
         {
             this.name        = nameStorage;
             this.temperature = temperatureStorage;

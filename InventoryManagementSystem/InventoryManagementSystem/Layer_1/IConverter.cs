@@ -1,9 +1,9 @@
 ﻿namespace InventoryManagementSystem.Layer_1
 {
-    internal interface IConverter
+    public interface IConverter
     {
-        internal void parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo);
+        public void parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo);
 
-        internal string[] getInfo(string elementSource, string elementName, string elementLength);
+        public string[] getInfo(string elementSource, string elementName, string elementLength);
     }
 }

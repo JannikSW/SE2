@@ -3,7 +3,7 @@
 namespace InventoryManagementSystem.Layer_3
 {
     [Serializable]
-    internal class TemperatureException : Exception
+    public class TemperatureException : Exception
     {
         public TemperatureException()
         {

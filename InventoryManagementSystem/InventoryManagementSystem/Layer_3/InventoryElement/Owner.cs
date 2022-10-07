@@ -1,10 +1,10 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal class Owner : IInventoryElement
+    public class Owner : IInventoryElement
     {
         protected string name;
 
-        internal Owner(string name)
+        public Owner(string name)
         {
             this.name = name;
         }

@@ -2,11 +2,11 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    class KategoryManager: IManager
+    public class KategoryManager: IManager
     {
         List<IInventoryElement> kategoryList;
 
-        internal KategoryManager(List<IInventoryElement> kategoryList)
+        public KategoryManager(List<IInventoryElement> kategoryList)
         {
             this.kategoryList = kategoryList;
         }

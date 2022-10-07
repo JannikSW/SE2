@@ -2,11 +2,11 @@
 
 namespace InventoryManagementSystem
 {
-    class GuiConverter : IConverter
+    public class GuiConverter : IConverter
     {
         Formatter formatter;
 
-        internal GuiConverter()
+        public GuiConverter()
         {
             this.formatter = new Formatter();
         }

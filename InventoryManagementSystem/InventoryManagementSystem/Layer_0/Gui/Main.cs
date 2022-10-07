@@ -1,5 +1,4 @@
 using InventoryManagementSystem.Layer_1;
-using InventoryManagementSystem.Layer_3;
 
 namespace InventoryManagementSystem
 {

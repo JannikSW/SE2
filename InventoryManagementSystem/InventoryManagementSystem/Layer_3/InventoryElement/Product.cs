@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal class Product : IInventoryElement 
+    public class Product : IInventoryElement 
     {
         protected string   name;
         protected Price    price;
@@ -9,7 +9,7 @@
         protected IInventoryElement storage;
         protected IInventoryElement owner;
 
-        internal Product(string nameProduct, Price productPrice, DateTime storagedateProduct, IInventoryElement kategoryProduct, IInventoryElement storageProduct, IInventoryElement ownerProduct)
+        public Product(string nameProduct, Price productPrice, DateTime storagedateProduct, IInventoryElement kategoryProduct, IInventoryElement storageProduct, IInventoryElement ownerProduct)
         {
             this.name        = nameProduct;
             this.price       = productPrice;

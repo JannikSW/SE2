@@ -1,13 +1,13 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    interface IManager
-    { 
-        internal void addElement(string[] element);
+    public interface IManager
+    {
+        public void addElement(string[] element);
 
-        internal void deleteElement(string name);
+        public void deleteElement(string name);
 
-        internal string[] infoElement();
+        public string[] infoElement();
 
-        internal string[] infoShortElement();
+        public string[] infoShortElement();
     }
 }

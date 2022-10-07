@@ -2,16 +2,16 @@
 
 namespace InventoryManagementSystem.Layer_1
 {
-    internal class Formatter
+    public class Formatter
     {
         InventoryManager inventoryManager;
 
-        internal Formatter()
+        public Formatter()
         {
             this.inventoryManager = new InventoryManager();
         }
 
-        internal void formatOrder(string elementSource, string elementName, string elementAction, string elementInfo)
+        public void formatOrder(string elementSource, string elementName, string elementAction, string elementInfo)
         {
             IFormatter formatter;
             string[] formatInfo;
@@ -21,7 +21,7 @@ namespace InventoryManagementSystem.Layer_1
             this.inventoryManager.execute(elementName, elementAction, formatInfo);
         }
 
-        internal string[] formatInfo(string elementSource, string elementName, string elementLength)
+        public string[] formatInfo(string elementSource, string elementName, string elementLength)
         {
             IFormatter formatter;
 

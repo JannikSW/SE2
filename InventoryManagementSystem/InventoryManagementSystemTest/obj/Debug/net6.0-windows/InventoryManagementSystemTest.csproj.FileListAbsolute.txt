@@ -97,3 +97,12 @@ C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagement
 C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\obj\Debug\net6.0-windows\InventoryManagementSystemTest.pdb
 C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\obj\Debug\net6.0-windows\InventoryManagementSystemTest.genruntimeconfig.cache
 C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\obj\Debug\net6.0-windows\ref\InventoryManagementSystemTest.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\CoverletSourceRootsMapping
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\InventoryManagementSystem.deps.json
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\InventoryManagementSystem.runtimeconfig.json
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\InventoryManagementSystem.exe
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\InventoryManagementSystem.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\InventoryManagementSystem.pdb
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\Castle.Core.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\Moq.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystemTest\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll

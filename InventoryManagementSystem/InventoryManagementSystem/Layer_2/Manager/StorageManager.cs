@@ -2,11 +2,11 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    class StorageManager : IManager
+    public class StorageManager : IManager
     {
         List<IInventoryElement> storageList;
 
-        internal StorageManager(List<IInventoryElement> storageList)
+        public StorageManager(List<IInventoryElement> storageList)
         {
             this.storageList = storageList;
         }

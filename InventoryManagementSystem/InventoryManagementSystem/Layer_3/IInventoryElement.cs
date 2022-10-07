@@ -1,9 +1,9 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal interface IInventoryElement
+    public interface IInventoryElement
     {
-        internal string getElementInfo();
+        public string getElementInfo();
 
-        internal string getElementShortInfo();
+        public string getElementShortInfo();
     }
 }

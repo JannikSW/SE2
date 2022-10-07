@@ -4,7 +4,7 @@ using static InventoryManagementSystem.Layer_2.IFormatter;
 
 namespace InventoryManagementSystem.Layer_2
 {
-    internal class InventoryManager
+    public class InventoryManager
     {
         IManager productManager;
         IManager kategoryManager;
@@ -16,7 +16,7 @@ namespace InventoryManagementSystem.Layer_2
         List<IInventoryElement> storageList;
         List<IInventoryElement> ownerList;
 
-        internal InventoryManager()
+        public InventoryManager()
         {
             this.productList  = new List<IInventoryElement>();
             this.kategoryList = new List<IInventoryElement>();
@@ -30,12 +30,12 @@ namespace InventoryManagementSystem.Layer_2
 
         }
 
-        internal void execute(string elementName, string elementOrder, string[] elementInfo)
+        public void execute(string elementName, string elementOrder, string[] elementInfo)
         {
             this.executeOrder(elementName, elementOrder, elementInfo);
         }
 
-        internal string[] request(IFormatter.elementInfo requestInfo)
+        public string[] request(IFormatter.elementInfo requestInfo)
         {                
             if (requestInfo.name == "Product")
             {

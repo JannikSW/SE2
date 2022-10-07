@@ -3,12 +3,12 @@
 
 namespace InventoryManagementSystem.Layer_3
 {
-    internal class Price
+    public class Price
     {
         protected int big;
         protected int small;
 
-        internal Price(string priceString)
+        public Price(string priceString)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace InventoryManagementSystem.Layer_3
             }
         }
 
-        internal string infoString()
+        public virtual string infoString()
         {
             return string.Format("{0}.{1}", big.ToString(), small.ToString());
         }

@@ -2,14 +2,14 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    class ProductManager : IManager
+    public class ProductManager : IManager
     {
         List<IInventoryElement> productList;
         List<IInventoryElement> kategoryList;
         List<IInventoryElement> storageList;
         List<IInventoryElement> ownerList;
 
-        internal ProductManager(List<IInventoryElement> productList, List<IInventoryElement> kategoryList, List<IInventoryElement> storageList, List<IInventoryElement> ownerList)
+        public ProductManager(List<IInventoryElement> productList, List<IInventoryElement> kategoryList, List<IInventoryElement> storageList, List<IInventoryElement> ownerList)
         {
             this.productList  = productList;
             this.kategoryList = kategoryList;
