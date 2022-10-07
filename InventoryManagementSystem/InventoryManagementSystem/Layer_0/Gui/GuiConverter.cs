@@ -6,9 +6,9 @@ namespace InventoryManagementSystem
     {
         Formatter formatter;
 
-        public GuiConverter()
+        public GuiConverter(Formatter formatter)
         {
-            this.formatter = new Formatter();
+            this.formatter = formatter;
         }
 
         void IConverter.parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo)

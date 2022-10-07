@@ -5,12 +5,14 @@ namespace InventoryManagementSystem
     public partial class Main : Form
     {
         IConverter converter;
+        Formatter formatter;
 
         public Main()
         {
             InitializeComponent();
 
-            converter = new GuiConverter();
+            formatter = new Formatter();
+            converter = new GuiConverter(formatter);
 
             UpdateView();
         }
@@ -105,29 +107,23 @@ namespace InventoryManagementSystem
 
         private void btn_Load_Click(object sender, EventArgs e)
         {
-//            OpenFileDialog frm_loadFile = new OpenFileDialog();
-//            string filePath = "";
+            OpenFileDialog frm_loadFile = new OpenFileDialog();
+            string filePath = "";
             
-//            frm_loadFile.InitialDirectory = "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\Testdaten";
-//            frm_loadFile.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-//            frm_loadFile.FilterIndex = 1;
-//            frm_loadFile.RestoreDirectory = true;
+            frm_loadFile.InitialDirectory = "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\Testdaten";
+            frm_loadFile.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            frm_loadFile.FilterIndex = 1;
+            frm_loadFile.RestoreDirectory = true;
             
-//            if (frm_loadFile.ShowDialog() == DialogResult.OK)
-//            {
-//                filePath = frm_loadFile.FileName;
-//                if (filePath.EndsWith(".csv"))
-//                {
-//                    Csv myCsv = new Csv(filePath);
-//                    this.myProduct = myCsv.dataProduct;
-//                    this.myProductkategory= myCsv.dataProductkategory;
-//                    this.myStorageplace = myCsv.dataStorageplace;
-//                    this.myOwner = myCsv.dataOwner;
-
-//                    myCsv.loadData();
-//                }
-//            }
-//            this.UpdateView();
+            if (frm_loadFile.ShowDialog() == DialogResult.OK)
+            {
+                filePath = frm_loadFile.FileName;
+                if (filePath.EndsWith(".csv"))
+                {
+                    Csv myCsv = new Csv(filePath, this.formatter);
+                }
+            }
+            this.UpdateView();
         }
 
         private void btn_Save_Click(object sender, EventArgs e)

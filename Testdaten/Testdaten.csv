@@ -1,16 +1,16 @@
-Product,Wasserflasche,0.49,15/09/2022,Wasser,Getränkekasten,Jannik
+Kategory,TK-Essen,-24 - -18 °C,365
+Kategory,Fleisch,4 - 7 °C,7
+Kategory,Wasser,4 - 25 °C,365
+Kategory,Saft,4 - 7 °C,20
+Storageplace,Getränkekasten,15 - 30 °C
+Storageplace,Kühlschrank, 5 - 5 °C
+Storageplace,Gefrierschrank, -22 - -20 °C
+Owner,Manuel
+Owner,Jan
+Owner,Jannik
+Product,Wasserflasche,1.49,15/09/2022,Wasser,Getränkekasten,Jannik
 Product,Orangensaft,1.99,23/09/2022,Saft,Kühlschrank,Jannik
 Product,TK-Pizza Salami,3.49,20/09/2022,TK-Essen,Gefrierschrank,Jannik
 Product,Apfelsaft,2.79,20/09/2022,Saft,Kühlschrank,Manuel
 Product,Hähnchen,4.99,29/09/2022,Fleisch,Kühlschrank,Jan
 Product,Wasserflasche,1.99,29/09/2022,Wasser,Getränkekasten,Jan
-Productkategory,TK-Essen,-24 - -18 °C,365
-Productkategory,Fleisch,4 - 7 °C,7
-Productkategory,Wasser,4 - 25 °C,365
-Productkategory,Saft,4 - 7 °C,20
-Storageplace,Getränkekasten,16,15 - 30 °C
-Storageplace,Kühlschrank,25, 5 - 5 °C
-Storageplace,Gefrierschrank,20, -22 - -20 °C
-Owner,Manuel
-Owner,Jan
-Owner,Jannik

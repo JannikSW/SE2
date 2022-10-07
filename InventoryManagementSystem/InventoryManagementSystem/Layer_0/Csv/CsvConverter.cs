@@ -6,19 +6,19 @@ namespace InventoryManagementSystem
     {
         Formatter formatter;
 
-        public CsvConverter()
+        public CsvConverter(Formatter formatter)
         {
-            this.formatter = new Formatter();
+            this.formatter = formatter;
         }
 
         void IConverter.parseInfo(string elementSource, string elementName, string elemenAction, string elementInfo)
         {
-            throw new NotImplementedException();
+            this.formatter.formatOrder(elementSource, elementName, elemenAction, elementInfo);
         }
 
         string[] IConverter.getInfo(string elementSource, string elementName, string elementLength)
         {
-            throw new NotImplementedException();
+            return this.formatter.formatInfo(elementSource, elementName, elementLength);
         }
     }
 }

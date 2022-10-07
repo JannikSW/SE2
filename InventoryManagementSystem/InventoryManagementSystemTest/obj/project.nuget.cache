@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LWxXP9MWDMnp8QN+k5NgEMAgBiu9Csd8vqEf39Yfxk39mzOksyTMJ35zRpeBH8zX8MT6VVe2/rv8eA0fnGJSEQ==",
+  "dgSpecHash": "yjt5EpMJh8/gO8qBR+SM5k4LezwSFY8gkSv4qd+5XrkrpSGWeQX2MDUemoYMTnnWEF7Ho66bInHtUZ+B6Pbkbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jannik\\Desktop\\Letzte\\SE2\\InventoryManagementSystem\\InventoryManagementSystemTest\\InventoryManagementSystemTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jannik\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Jannik\\.nuget\\packages\\coverlet.msbuild\\3.1.2\\coverlet.msbuild.3.1.2.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\microsoft.net.test.sdk\\17.1.0\\microsoft.net.test.sdk.17.1.0.nupkg.sha512",
@@ -18,6 +19,7 @@
     "C:\\Users\\Jannik\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
+    "C:\\Users\\Jannik\\.nuget\\packages\\reportgenerator\\5.1.10\\reportgenerator.5.1.10.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Jannik\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

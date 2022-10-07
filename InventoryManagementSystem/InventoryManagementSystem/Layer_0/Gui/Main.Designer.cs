@@ -59,8 +59,6 @@
             this.lbl_addStorageName = new System.Windows.Forms.Label();
             this.teb_addKategoryTemperature = new System.Windows.Forms.TextBox();
             this.teb_addStorageTemperature = new System.Windows.Forms.TextBox();
-            this.teb_addStorageCapacity = new System.Windows.Forms.TextBox();
-            this.lbl_addStorageCapacity = new System.Windows.Forms.Label();
             this.liv_Storage = new System.Windows.Forms.ListView();
             this.liv_Kategory = new System.Windows.Forms.ListView();
             this.liv_Product = new System.Windows.Forms.ListView();
@@ -316,7 +314,7 @@
             // lbl_addStorageTemperature
             // 
             this.lbl_addStorageTemperature.AutoSize = true;
-            this.lbl_addStorageTemperature.Location = new System.Drawing.Point(530, 333);
+            this.lbl_addStorageTemperature.Location = new System.Drawing.Point(530, 303);
             this.lbl_addStorageTemperature.Name = "lbl_addStorageTemperature";
             this.lbl_addStorageTemperature.Size = new System.Drawing.Size(76, 15);
             this.lbl_addStorageTemperature.TabIndex = 33;
@@ -349,27 +347,10 @@
             // 
             // teb_addStorageTemperature
             // 
-            this.teb_addStorageTemperature.Location = new System.Drawing.Point(675, 330);
+            this.teb_addStorageTemperature.Location = new System.Drawing.Point(675, 300);
             this.teb_addStorageTemperature.Name = "teb_addStorageTemperature";
             this.teb_addStorageTemperature.Size = new System.Drawing.Size(105, 23);
             this.teb_addStorageTemperature.TabIndex = 35;
-            // 
-            // teb_addStorageCapacity
-            // 
-            this.teb_addStorageCapacity.Location = new System.Drawing.Point(675, 300);
-            this.teb_addStorageCapacity.Name = "teb_addStorageCapacity";
-            this.teb_addStorageCapacity.Size = new System.Drawing.Size(105, 23);
-            this.teb_addStorageCapacity.TabIndex = 37;
-            // 
-            // lbl_addStorageCapacity
-            // 
-            this.lbl_addStorageCapacity.AutoSize = true;
-            this.lbl_addStorageCapacity.Location = new System.Drawing.Point(530, 303);
-            this.lbl_addStorageCapacity.Name = "lbl_addStorageCapacity";
-            this.lbl_addStorageCapacity.Size = new System.Drawing.Size(56, 15);
-            this.lbl_addStorageCapacity.TabIndex = 36;
-            this.lbl_addStorageCapacity.Text = "Capacity:";
-            this.lbl_addStorageCapacity.UseWaitCursor = true;
             // 
             // liv_Storage
             // 
@@ -449,8 +430,6 @@
             this.Controls.Add(this.liv_Product);
             this.Controls.Add(this.liv_Kategory);
             this.Controls.Add(this.liv_Storage);
-            this.Controls.Add(this.teb_addStorageCapacity);
-            this.Controls.Add(this.lbl_addStorageCapacity);
             this.Controls.Add(this.teb_addStorageTemperature);
             this.Controls.Add(this.teb_addKategoryTemperature);
             this.Controls.Add(this.lbl_addStorageTemperature);
@@ -521,8 +500,6 @@
         private Label lbl_addStorageName;
         private TextBox teb_addKategoryTemperature;
         private TextBox teb_addStorageTemperature;
-        private TextBox teb_addStorageCapacity;
-        private Label lbl_addStorageCapacity;
         private ListView liv_Storage;
         private ListView liv_Kategory;
         private ListView liv_Product;
