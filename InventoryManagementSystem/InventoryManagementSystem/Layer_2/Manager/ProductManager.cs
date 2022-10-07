@@ -26,38 +26,45 @@ namespace InventoryManagementSystem.Layer_2
             Price productPrice;
             DateTime productDate;
 
-            productPrice = new Price(productElement[1]);
-            productDate = DateTime.Parse(productElement[2]);
-
-            foreach (IInventoryElement tempKategory in this.kategoryList)
+            try
             {
-                if (tempKategory.getElementShortInfo() == productElement[3])
-                {
-                    kategory = (Kategory)tempKategory;
-                    break;
-                }
-            }
+                productPrice = new Price(productElement[1]);
+                productDate = DateTime.Parse(productElement[2]);
 
-            foreach (IInventoryElement tempStorage in this.storageList)
+                foreach (IInventoryElement tempKategory in this.kategoryList)
+                {
+                    if (tempKategory.getElementShortInfo() == productElement[3])
+                    {
+                        kategory = (Kategory)tempKategory;
+                        break;
+                    }
+                }
+
+                foreach (IInventoryElement tempStorage in this.storageList)
+                {
+                    if (tempStorage.getElementShortInfo() == productElement[4])
+                    {
+                        storage = (Storage)tempStorage;
+                        break;
+                    }
+                }
+
+                foreach (IInventoryElement tempOwner in this.ownerList)
+                {
+                    if (tempOwner.getElementShortInfo() == productElement[5])
+                    {
+                        owner = (Owner)tempOwner;
+                        break;
+                    }
+                }
+
+                product = new Product(productElement[0], productPrice, productDate, kategory, storage, owner);
+                this.productList.Add(product);
+            }
+            catch (PriceException e)
             {
-                if (tempStorage.getElementShortInfo() == productElement[4])
-                {
-                    storage = (Storage)tempStorage;
-                    break;
-                }
+                throw new InvalidDataException(e.Message);
             }
-
-            foreach (IInventoryElement tempOwner in this.ownerList)
-            {
-                if (tempOwner.getElementShortInfo() == productElement[5])
-                {
-                    owner = (Owner)tempOwner;
-                    break;
-                }
-            }
-
-            product = new Product(productElement[0], productPrice, productDate, kategory, storage, owner);
-            this.productList.Add(product);
         }
 
         void IManager.deleteElement(string productName)

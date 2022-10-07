@@ -16,11 +16,18 @@ namespace InventoryManagementSystem.Layer_2
             IInventoryElement storage;
             Temperature storageTemperature;
 
-            storageTemperature = new Temperature(storageElement[1]);
+            try
+            { 
+                storageTemperature = new Temperature(storageElement[1]);
 
-            storage = new Storage(storageElement[0], storageTemperature);
-            
-            this.storageList.Add(storage);
+                storage = new Storage(storageElement[0], storageTemperature);
+
+                this.storageList.Add(storage);
+            }
+            catch(TemperatureException e)
+            {
+                throw new InvalidDataException(e.Message);
+            }
         }
 
         void IManager.deleteElement(string storageName)

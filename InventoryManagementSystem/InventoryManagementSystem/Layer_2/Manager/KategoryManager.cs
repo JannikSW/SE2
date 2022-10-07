@@ -16,18 +16,25 @@ namespace InventoryManagementSystem.Layer_2
             IInventoryElement kategory;
             Temperature kategoryTemperature;
 
-            kategoryTemperature = new Temperature(kategoryElement[1]);  
-
-            if (kategoryElement.Length == 3)
+            try
             {
-                kategory = new Perishable(kategoryElement[0], kategoryTemperature, int.Parse(kategoryElement[2]));
-            }
-            else
-            {
-                kategory = new Unperishable(kategoryElement[0], kategoryTemperature);
-            }
+                kategoryTemperature = new Temperature(kategoryElement[1]);
 
-            this.kategoryList.Add(kategory);
+                if (kategoryElement.Length == 3)
+                {
+                    kategory = new Perishable(kategoryElement[0], kategoryTemperature, int.Parse(kategoryElement[2]));
+                }
+                else
+                {
+                    kategory = new Unperishable(kategoryElement[0], kategoryTemperature);
+                }
+
+                this.kategoryList.Add(kategory);
+            }
+            catch(TemperatureException e)
+            {
+                throw new InvalidDataException(e.Message);
+            }
         }
 
         void IManager.deleteElement(string kategoryName)
