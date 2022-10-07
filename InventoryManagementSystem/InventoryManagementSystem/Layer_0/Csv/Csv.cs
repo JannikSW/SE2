@@ -28,9 +28,12 @@ namespace InventoryManagementSystem
                 string elementName = values[0];
                 foreach (var element in values)
                 {
-                    if (elementInfo != "Product" || elementInfo != "Storage" || elementInfo != "Kategory" || elementInfo != "Owner")
-                    elementInfo = elementInfo + element;
+                    if (element != "Product" && element != "Storage" && element != "Kategory" && element != "Owner")
+                    {
+                        elementInfo = elementInfo + element + ",";
+                    }
                 }
+                elementInfo = elementInfo.TrimEnd(',');   
 
                 converter.parseInfo("Csv", elementName, "Add", elementInfo);
             }

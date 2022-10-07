@@ -174,10 +174,29 @@ namespace InventoryManagementSystem
             cob_addProductStorage.Items.Clear();
             cob_Owner.Items.Clear();
 
+
+            elementInformation = converter.getInfo("Gui", "Product", "True");
+            foreach (string information in elementInformation)
+            {
+                liv_Product.Items.Add(information);
+            }
+
             elementInformation = converter.getInfo("Gui", "Kategory", "True");
             foreach (string information in elementInformation)
             {
                 liv_Kategory.Items.Add(information);
+            }
+
+            elementInformation = converter.getInfo("Gui", "Storage", "True");
+            foreach (string information in elementInformation)
+            {
+                liv_Storage.Items.Add(information);
+            }
+
+            elementInformation = converter.getInfo("Gui", "Storage", "False");
+            foreach (string information in elementInformation)
+            {
+                cob_addProductStorage.Items.Add(information);
             }
 
             elementInformation = converter.getInfo("Gui", "Kategory", "False");
@@ -192,28 +211,6 @@ namespace InventoryManagementSystem
                 cob_Owner.Items.Add(information);
             }
 
-
-            //            foreach (Product tempProduct in this.myProduct)
-            //            {
-            //                liv_Product.Items.Add(tempProduct.infoString());
-            //            }
-
-            //            foreach (Productkategory tempProductkategory in this.myProductkategory)
-            //            {
-            //                liv_Productkategory.Items.Add(tempProductkategory.infoString());
-            //                cob_addProductProductkategory.Items.Add(tempProductkategory.infoSmallString());
-            //            }
-
-            //            foreach (Storage tempStorageplace in this.myStorageplace)
-            //            {
-            //                liv_Storageplace.Items.Add(tempStorageplace.infoString());
-            //                cob_addProductStorageplace.Items.Add(tempStorageplace.infoSmallString());
-            //            }
-
-            //            foreach (Owner tempOwner in this.myOwner)
-            //            {
-            //                cob_Owner.Items.Add(tempOwner.infoString());
-            //            }
         }
 
 
