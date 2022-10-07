@@ -1,0 +1,7 @@
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.Main.resources
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.csproj.GenerateResource.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.AssemblyInfo.cs
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net5.0-windows\InventoryManagementSystem.csproj.CoreCompileInputs.cache

@@ -2,7 +2,7 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    internal class KategoryManager: IManager
+    class KategoryManager: IManager
     {
         List<IInventoryElement> kategoryList;
 

@@ -2,7 +2,7 @@
 
 namespace InventoryManagementSystem.Layer_2
 {
-    internal class StorageManager : IManager
+    class StorageManager : IManager
     {
         List<IInventoryElement> storageList;
 

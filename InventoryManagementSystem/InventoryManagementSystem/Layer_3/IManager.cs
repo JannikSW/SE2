@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagementSystem.Layer_3
 {
-    internal interface IManager
+    interface IManager
     { 
         internal void addElement(string[] element);
 

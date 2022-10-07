@@ -1,0 +1,17 @@
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net6.0-windows7.0\InventoryManagementSystem.exe
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net6.0-windows7.0\InventoryManagementSystem.deps.json
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net6.0-windows7.0\InventoryManagementSystem.runtimeconfig.json
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net6.0-windows7.0\InventoryManagementSystem.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net6.0-windows7.0\InventoryManagementSystem.pdb
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.Main.resources
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.csproj.GenerateResource.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.AssemblyInfo.cs
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\refint\InventoryManagementSystem.dll
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.pdb
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\InventoryManagementSystem.genruntimeconfig.cache
+C:\Users\Jannik\Desktop\Letzte\SE2\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net6.0-windows7.0\ref\InventoryManagementSystem.dll
